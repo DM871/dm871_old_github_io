@@ -39,35 +39,48 @@ permalink: /
 
 
 
-| Week | Topics                                                      | Literature                                                                             | Slides    | Test |
-|------+-------------------------------------------------------------+----------------------------------------------------------------------------------------+-----------+------|
-|    5 | Introduction - Linear Programming, Notation                 | [Notes][21]                                                                            | [lec1]    |      |
-|      |                                                             |                                                                                        |           |      |
-|      | Resource allocation in factory planning. Diet problem.      | [L1,L2] *[HL ch 1,2,3]*                                                                |           |      |
-|      | Linear programming problems and geometrical interpretation. | *[MG ch 1,2, Appendix]* [L3]                                                           |           |      |
-|      | Linear Programming, towards the Simplex Method              | [Notes][22]                                                                            | [lec2]    |      |
-|      |                                                             |                                                                                        |           |      |
-|      | History. Fourier & Moutzkin elimination                     | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)          |           |      |
-|      |                                                             |                                                                                        |           |      |
-|      | Notation: polyhedral analysis                               | *[MG ch 4]* *[HL sc 5.1]* [L5]                                                         |           |      |
-|      | Linear programming theory, Fundamental theorem              | [L4,L6] [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |           |      |
-|      | Gaussian Elimination                                        | [L4]                                                                                   |           |      |
-|      |                                                             |                                                                                        |           |      |
-|------+-------------------------------------------------------------+----------------------------------------------------------------------------------------+-----------+------|
+| Week | Topics                                                         | Literature                                                                             | Slides | Test |
+|------+----------------------------------------------------------------+----------------------------------------------------------------------------------------+--------+------|
+|    5 | Introduction - Linear Programming, Notation                    | [Notes][21]                                                                            | [lec1] |      |
+|      |                                                                |                                                                                        |        |      |
+|      | Resource allocation in factory planning. Diet problem.         | [L1,L2] *[HL ch 1,2,3]*                                                                |        |      |
+|      | Linear programming problems and geometrical interpretation.    | *[MG ch 1,2, Appendix]* [L3]                                                           |        |      |
+|      | Linear Programming, towards the Simplex Method                 | [Notes][22]                                                                            | [lec2] |      |
+|      |                                                                |                                                                                        |        |      |
+|      | History. Fourier & Moutzkin elimination                        | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)          |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      | Notation: polyhedral analysis                                  | *[MG ch 4]* *[HL sc 5.1]* [L5]                                                         |        |      |
+|      | Linear programming theory, Fundamental theorem                 | [L4,L6] [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |        |      |
+|      | Gaussian Elimination                                           | [L4]                                                                                   |        |      |
+|      |                                                                |                                                                                        |        |      |
+|------+----------------------------------------------------------------+----------------------------------------------------------------------------------------+--------+------|
+|    6 | The Simplex Method Introduction - Linear Programming, Notation |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|      |                                                                |                                                                                        |        |      |
+|------+----------------------------------------------------------------+----------------------------------------------------------------------------------------+--------+------|
 
 ### Literature
 
 #### Main References
 
 
-- [F] M. Fischetti, [/Introduction to Mathematical Optimization/](https://www.amazon.com/Introduction-Mathematical-Optimization-Matteo-Fischetti/dp/1692792024)
+- [F] M. Fischetti, [Introduction to Mathematical Optimization](https://www.amazon.com/Introduction-Mathematical-Optimization-Matteo-Fischetti/dp/1692792024)
   Independently published, 2019
 
-- [MG] J. Matousek and B. Gartner. [/Understanding and Using Linear Programming/](http://dx.doi.org/10.1007/978-3-540-30717-4). Springer Berlin Heidelberg, 2007
+- [MG] J. Matousek and B. Gartner. [Understanding and Using Linear Programming](http://dx.doi.org/10.1007/978-3-540-30717-4). Springer Berlin Heidelberg, 2007
 
-- [Wo]  L.A. Wolsey. /Integer programming/. John Wiley & Sons, New York, USA, 1998
+- [Wo]  L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 1998.
 
-- [LN] M. Chiarandini. [Lecture Notes][0]
+- [LN] M. Chiarandini. [Lecture Notes][0]. 2021.
 
 
 
