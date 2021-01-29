@@ -15,8 +15,7 @@ permalink: /
 
 - [Official course description](https://odinlister.sdu.dk/fagbesk/internkode/DM872/)
 
-- [BlackBoard](https://e-learn.sdu.dk/webapps/blackboard/execute/courseMain?course_id=_414555_1)
-  
+- [ITS Learning](https://sdu.itslearning.com/ContentArea/ContentArea.aspx?LocationID=9174&LocationType=1)
 
 - Teacher: [Marco Chiarandini](https://imada.sdu.dk/~marco)
 
