@@ -140,9 +140,7 @@ w3.includeHTML();
 
 - [Ch] V. Chvatal. Linear Programming. W.H.Freeman, 1983
 
-
 - [Va] R. Vanderbei. [Linear Programming: Foundations and Extensions](http://dx.doi.org/10.1007/978-0-387-74388-2). Springer US, 2008
-
 
 - [Da] G.B. Dantzig.  [Linear Programming](http://dx.doi.org/10.1287/opre.50.1.42.17798). Operations Research, 2002, 50(1), 42-47
 
@@ -151,7 +149,6 @@ w3.includeHTML();
 
 
 - [AMO] R.K. Ahuja, T.L. Magnanti and J. Orlin. Network Flows: Theory, Algorithms, and Applications. Prentice Hall, 1993
-
 
 
 <!-- 
@@ -172,6 +169,39 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
+
+#### Python
+
+- General tutorials from slides in DM561: 
+  - [Part 1](https://dm561.github.io/assets/dm561-lec1.pdf): basics, data types, control flow, std library, OO programming
+  - [Part 2](https://dm561.github.io/assets/dm561-lec2.pdf): exceptions, file i/o, numpy
+  - [Part 3](https://dm561.github.io/assets/dm561-lec3.pdf): graphics, data viz, pandas
+
+
+- [Youtube series](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+
+
+- [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/notebooks/Tutorial.ipynb)
+
+<!---
+(http://www.imada.sdu.dk/~marco/DM871/Resources/Ipython/Tutorial.html)
+-->
+
+
+
+### Assessment
+
+
+- Ordinary exam: 24h take-home tests:
+  - Test 1: week 8, from 8:00 to 7:59
+  - Test 2: week 10, from 8:00 to 7:59
+  - Test 3: week 13, from 8:00 to 7:59
+
+
+- Reexam: Oral in August
+
+
+- [Instructions for the take-home assignments](./notes/editing.html)
 
 
 
