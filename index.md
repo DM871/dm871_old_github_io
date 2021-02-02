@@ -178,14 +178,11 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
   - [Part 3](https://dm561.github.io/assets/dm561-lec3.pdf): graphics, data viz, pandas
 
 
-- [Youtube series](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+<!--- - [Youtube series](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU) -->
 
 
-- [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/notebooks/Tutorial.ipynb)
+- [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial.ipynb)
 
-<!---
-(http://www.imada.sdu.dk/~marco/DM871/Resources/Ipython/Tutorial.html)
--->
 
 
 
