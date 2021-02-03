@@ -185,6 +185,16 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
+#### Other Tools
+
+
+- Tools for plotting graphs: [LP Grapher](https://www.zweigmedia.com/utilities/lpg/index.html?lang=en),
+    grapher in Mac, [graph.tk](http://graph.tk).
+
+- [Simple Method tool](https://www.zweigmedia.com/simplex/simplex.php?lang=en)
+
+- [NEOS server](https://neos-server.org/neos/)
+
 
 ### Assessment
 
