@@ -57,12 +57,12 @@ w3.includeHTML();
 |-------------+----------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | E           | Exercises: Linear Algebra Review                                     | [Sheet 0][50]                                                                  |            |
 |-------------+----------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
-| 5 L         | Course Organization                                                  | [slides][1]                                                                    |            |
-|             | Introductory elements: Linear Programming, Notation                  | [Notes][21]                                                                    |            |
-|             | Resource allocation in factory planning. Diet problem.               | [HL ch 1,2,3]                                                                  |            |
+| 5 L         | Course Organization                                                  | [Slides][1]                                                                    |            |
+|             | Introductory elements: Linear Programming, Notation                  | [LN pp 1-7][21]                                                                |            |
+|             | Resource allocation in factory planning.                             | [HL ch 1,2,3]                                                                  |            |
 |             | Linear programming problems and geometrical interpretation.          | [MG ch 1,2, Appendix]                                                          |            |
-|             | Linear Programming, towards the Simplex Method                       | [Notes][22]                                                                    |            |
-| L           | Fourier & Moutzkin elimination                                       | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)  |            |
+| L           | Diet problem                                                         | [Slides][2]; [LN pp 7-21][22]                                                  |            |
+|             | Fourier & Moutzkin elimination                                       | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)  |            |
 |             | Notation: polyhedral analysis                                        | [MG ch 4] [HL sc 5.1]                                                          |            |
 |             | Linear programming theory, Fundamental theorem                       | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |            |
 |             | Gaussian Elimination                                                 |                                                                                |            |
@@ -207,7 +207,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [0]: {{ "/assets/dm545-main.pdf" | absolute_url }}
 
 [1]: {{ "/assets/dm545-intro-handout.pdf" | absolute_url }}
-[2]: {{ "/assets/dm545-lec2-handout.pdf" | absolute_url }}
+[2]: {{ "/assets/dm545-intro-2-handout.pdf" | absolute_url }}
 
 
 [21]: {{ "/assets/dm545-main.pdf#intro" | absolute_url }}

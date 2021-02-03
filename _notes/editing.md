@@ -50,7 +50,7 @@ categories: notes
     -   [Syntax Highlight Code In Word
         Documents](http://www.planetb.ca/syntax-highlight-word)
 
--   [Python for matrix operations](../notebooks/Tutorial4Exam.ipynb) (modules "numpy" and "fractions")
+-   [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb) (modules "numpy" and "fractions")
 
 <!-- -->
 
