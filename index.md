@@ -69,7 +69,7 @@ w3.includeHTML();
 | 6        L  | Simplex Method                                                         | [Slides][3]; [LN][23]                                                          |            |
 |             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |            |
 |             | Gaussian Elimination                                                   | [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                       |            |
-|             | Simplex method, tableaux and dictionaries                              |                                                                                |            |
+|             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
 | L           | Exception Handling and Initialization                                  |                                                                                |            |
 |             | Exception handling and degeneracies in simplex method. Pivot rules     |                                                                                |            |
 | E           | Exercises: Simplex Method                                              |                                                                                |            |
@@ -182,8 +182,9 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 <!--- - [Youtube series](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU) -->
 
 
-- [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial.ipynb)
+- [T1] [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial.ipynb)
 
+- [T2] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
 
 #### Other Tools
@@ -201,9 +202,9 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 - Ordinary exam: 24h take-home tests:
-  - Test 1: week 8, from 8:00 to 7:59
-  - Test 2: week 10, from 8:00 to 7:59
-  - Test 3: week 13, from 8:00 to 7:59
+  - Test 1: week 8, February 22, from 8:00 to 7:59
+  - Test 2: week 10, March 8, from 8:00 to 7:59
+  - Test 3: week 13, March 29, from 8:00 to 7:59
 
 
 - Reexam: Oral in August
