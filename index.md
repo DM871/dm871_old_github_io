@@ -64,15 +64,15 @@ w3.includeHTML();
 | L           | Diet problem                                                           | [Slides][2]; [LN pp 7-21][22]                                                  |            |
 |             | Fourier & Moutzkin elimination                                         | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)  |            |
 |             | Notation: polyhedral analysis                                          | [F ch 1, 2]; [MG ch 4]; [HL sc 5.1]                                            |            |
-| E           | Exercises: LP Modeling                                                 | [Sheet1][51]; [Solutions][61]                                                  |            |
+| E           | Exercises: LP Modeling                                                 | [Sheet 1][51]; [Solutions][61]                                                 |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 6        L  | Simplex Method                                                         | [Slides][3]; [LN][23]                                                          |            |
 |             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |            |
 |             | Gaussian Elimination                                                   | [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                       |            |
 |             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
-| L           | Exception Handling and Initialization                                  |                                                                                |            |
-|             | Exception handling and degeneracies in simplex method. Pivot rules     |                                                                                |            |
-| E           | Exercises: Simplex Method                                              |                                                                                |            |
+| L           | Exception Handling and Initialization                                  | [Slides]; [LN][24]; [Compedium][522]                                           |            |
+|             | Exception handling and degeneracies in simplex method. Pivot rules     | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]                                           |            |
+| E           | Exercises: Simplex Method                                              | [Sheet 2][52]                                                                  |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 7    L      | Duality Derivation:                                                    |                                                                                |            |
 |             | Bounding and multipliers approach                                      |                                                                                |            |
@@ -229,11 +229,14 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [21]: {{ "/assets/dm545-main.pdf#intro" | absolute_url }}
 [22]: {{ "/assets/dm545-main.pdf#diet" | absolute_url }}
 [23]: {{ "/assets/dm545-main.pdf#simplexalgorithm1" | absolute_url }}
+[24]: {{ "/assets/dm545-main.pdf#exceptions" | absolute_url }}
+
 
 <!--- Sheets -->
 [50]: {{ "/assets/dm545_sheet0.pdf" | absolute_url }}
 [51]: {{ "/assets/dm545_sheet1.pdf" | absolute_url }}
-
+[52]: {{ "/assets/dm545_sheet2.pdf" | absolute_url }}
+[522]: {{ "/assets/dm545_sheet2_plus.pdf" | absolute_url }}
 
 <!--- Solutions -->
 [60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
@@ -249,10 +252,10 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
-| 6        L | Simplex Method                                                       |  [ [[https://imada.sdu.dk/~marco/DM871/Resources/Ipython/Tutorial4Exam.html][Python tutorial]] ]                                                                                                                                                                 |            |
+| 6        L | Simplex Method                                                       |                                                                                                                                                                                                                                                                  |            |
 |            | Simplex method, tableaux and dictionaries                            |                                                                                                                                                                 |            |
-| L          | Exception Handling and Initialization                                | [ [[./Notes/dm545-main.pdf#exceptions][Notes]] ]    [ [[./Training/Solutions/dm545_sheet2_plus.pdf][compedium]] ]                                                                                                                                                                    |            |
-|            | Exception handling and degeneracies in simplex method. Pivot rules   | *[MG ch 5]*, *[HL sc 4.5]*                                                                                                                                                                    |            |
+| L          | Exception Handling and Initialization                                |                                                                                                                                                                    |            |
+|            | Exception handling and degeneracies in simplex method. Pivot rules   |                                                                                                                                                                    |            |
 | E          | LP Modeling                                                          | [[./Training/dm545_sheet1.pdf][Sheet1]]                                                        [[./Training/Solutions/dm545_sheet1.pdf][Sheet1]]                                                                                                                          |            |
 |------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------|
 | 7          | Duality Derivation:                                                  | [ [[./Notes/dm545-main.pdf#duality][Notes]] ]                                                                                                                                                                                     |            |
