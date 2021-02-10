@@ -70,7 +70,7 @@ w3.includeHTML();
 |             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |            |
 |             | Gaussian Elimination                                                   | [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                       |            |
 |             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
-| L           | Exception Handling and Initialization                                  | [Slides]; [LN][24]; [Compedium][522]                                           |            |
+| L           | Exception Handling and Initialization                                  | [Slides][4]; [LN][24]; [Compedium][522]                                        |            |
 |             | Exception handling and degeneracies in simplex method. Pivot rules     | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]                                           |            |
 | E           | Exercises: Simplex Method                                              | [Sheet 2][52]                                                                  |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
@@ -219,9 +219,10 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 <!--- Slides -->
-[1]: {{ "/assets/dm545-intro-handout.pdf" | absolute_url }}
-[2]: {{ "/assets/dm545-intro-2-handout.pdf" | absolute_url }}
-[3]: {{ "/assets/dm545-simplex-handout.pdf" | absolute_url }}
+[1]: {{ "/assets/dm545_handout_lec01_intro.pdf" | absolute_url }}
+[2]: {{ "/assets/dm545_handout_lec02_intro-2.pdf" | absolute_url }}
+[3]: {{ "/assets/dm545_handout_lec03_simplex.pdf" | absolute_url }}
+[4]: {{ "/assets/dm545_handout_lec04_simplex-2.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
