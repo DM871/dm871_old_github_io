@@ -70,8 +70,8 @@ w3.includeHTML();
 |             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |            |
 |             | Gaussian Elimination                                                   | [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                       |            |
 |             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
-| L           | Exception Handling and Initialization                                  | [Slides][4]; [LN][24]; [Compedium][522]                                        |            |
-|             | Exception handling and degeneracies in simplex method. Pivot rules     | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]                                           |            |
+| L           | Exception Handling, degeneracies, pivot rules,                         | [Slides][4]; [LN][24]; [Compedium][522]                                        |            |
+|             | Initialization                                                         | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]                                           |            |
 | E           | Exercises: Simplex Method                                              | [Sheet 2][52]                                                                  |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 7    L      | Duality Derivation:                                                    |                                                                                |            |
