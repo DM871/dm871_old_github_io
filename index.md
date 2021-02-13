@@ -72,13 +72,13 @@ w3.includeHTML();
 |             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
 | L           | Exception Handling, degeneracies, pivot rules,                         | [Slides][4]; [LN][24]; [Compedium][522]                                        |            |
 |             | Initialization                                                         | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]                                           |            |
-| E           | Exercises: Simplex Method                                              | [Sheet 2][52]; [Solutions][62]                                                 |            |
+| E           | Exercises: Simplex Method                                              | [Sheet 2][52]; [Solutions (Marco)][62]; [Solutions (Joannes)][63]                                 |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 7    L      | Duality Derivation:                                                    | [Slides][5]; [LN][25]; [F sec 5.1-5.5]                                         |            |
 |             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                               |            |
 |             | Duality Theory:                                                        |                                                                                |            |
 |             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                |            |
-| L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | Slides [LN][25]; [F sec 5.6-5.8]                                               |            |
+| L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | Slides; [LN][25]; [F sec 5.6-5.8]                                              |            |
 | E           | Exercises: Duality                                                     | [Sheet 3][53]                                                                  |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 8      L    | More on Duality                                                        |                                                                                | Monday,    |
@@ -246,7 +246,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
 [61]: {{ "/assets/Solutions/dm545_sheet1.pdf" | absolute_url }}
 [62]: {{ "/assets/Solutions/dm545_sheet2.pdf" | absolute_url }}
-
+[622] {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/sheet2.ipynb" }}
 
 
 
@@ -267,7 +267,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 |            | Bounding and multipliers approach                                    |                                                                                                                                                           |            |
 |            | Duality Theory:                                                      |                                                                                                                                                                                               |            |
 |            | Weak/strong duality theorems and complementary slackness theorem     |                                                                                                                                                                                               |            |
-| E          | Simplex Method                                                       | [[./Training/dm545_sheet2.pdf][Sheet2]]                                                           [[./Resources/Ipython/sheet2.html][Sheet2 (Johannes)]];   [[./Training/Solutions/dm545_sheet2.pdf][Sheet2 (Marco)]]                                                                                          |            |
+| E          | Simplex Method                                                       | [[./Training/dm545_sheet2.pdf][Sheet2]]                                                           [[./Resources/Ipython/sheet2.html][Sheet2 (Johannes)]   [[./Training/Solutions/dm545_sheet2.pdf][Sheet2 (Marco)]                                                                                             |            |
 |------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------|
 | 8          | More on Duality                                                      | [ [[./Notes/dm545-main.pdf#geometricdual][Notes]] ]                                                                                                                                                                                     |            |
 |            | Duality by Lagrangian relaxation                                     | [CL ch 2]                                                                                                                                                                                     |            |
