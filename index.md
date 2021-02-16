@@ -79,7 +79,7 @@ w3.includeHTML();
 |             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                                                                                                    |            |
 |             | Duality Theory:                                                        |                                                                                                                                                     |            |
 |             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                                                                                     |            |
-| L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | Slides; [LN][25]; [F sec 5.6-5.8]                                                                                                                   |            |
+| L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | [Slides][6]; [LN][25]; [F sec 5.6-5.8]                                                                                                              |            |
 | E           | Exercises: Duality                                                     | [Sheet 3][53]                                                                                                                                       |            |
 |-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
 | 8      L    | More on Duality                                                        |                                                                                                                                                     | Monday,    |
@@ -204,7 +204,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 - Ordinary exam: 24h take-home tests:
-  - Test 1: week 8, February 22, from 8:00 to 7:59
+  - Test 1: week 8, February 23, from 8:00 to 7:59
   - Test 2: week 10, March 8, from 8:00 to 7:59
   - Test 3: week 13, March 29, from 8:00 to 7:59
 
@@ -226,6 +226,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [3]: {{ "/assets/dm545_handout_lec03_simplex.pdf" | absolute_url }}
 [4]: {{ "/assets/dm545_handout_lec04_simplex-2.pdf" | absolute_url }}
 [5]: {{ "/assets/dm545_handout_lec05_duality.pdf" | absolute_url }}
+[6]: {{ "/assets/dm545_handout_lec06_duality-2.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
