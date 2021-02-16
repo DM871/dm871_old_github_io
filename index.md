@@ -14,6 +14,7 @@ permalink: /
 ### General information
 
 
+- [Official course description](https://odin.sdu.dk/sitecore/index.php?a=searchfagbesk&internkode=dm871&lang=en)
 
 - [ItsLearning](https://sdu.itslearning.com/ContentArea/ContentArea.aspx?LocationID=9174&LocationType=1)
 
