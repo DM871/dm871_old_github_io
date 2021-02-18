@@ -54,62 +54,62 @@ w3.includeHTML();
 
 #### Week 5
 
-| Week        | Topics                                                                 | Resources                                                                                                                                           | Activities |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| E           | Exercises: Linear Algebra Review                                       | [Sheet 0][50]; [Solutions][60]                                                                                                                      |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 5 L         | Course Organization                                                    | [Slides][1]; [LN pp 1-7][21]                                                                                                                        |            |
-|             | Introductory elements: Linear Programming, Notation                    |                                                                                                                                                     |            |
-|             | Resource allocation in factory planning.                               | [HL ch 1,2,3]                                                                                                                                       |            |
-|             | Linear programming problems and geometrical interpretation.            | [MG ch 1,2, Appendix]                                                                                                                               |            |
-| L           | Diet problem                                                           | [Slides][2]; [LN pp 7-21][22]                                                                                                                       |            |
-|             | Fourier & Moutzkin elimination                                         | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)                                                                       |            |
-|             | Notation: polyhedral analysis                                          | [F ch 1, 2]; [MG ch 4]; [HL sc 5.1]                                                                                                                 |            |
-| E           | Exercises: LP Modeling                                                 | [Sheet 1][51]; [Solutions][61]                                                                                                                      |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 6        L  | Simplex Method                                                         | [Slides][3]; [LN][23]                                                                                                                               |            |
-|             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming)                                                                      |            |
-|             | Gaussian Elimination                                                   | [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                                                                                            |            |
-|             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                                                                                         |            |
-| L           | Exception Handling, degeneracies, pivot rules,                         | [Slides][4]; [LN][24]; [Compedium][522]                                                                                                             |            |
-|             | Initialization                                                         | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]                                                                                                                |            |
-| E           | Exercises: Simplex Method                                              | [Sheet 2][52]; [Solutions (Marco)][62]; [Solutions (Joannes)](https://github.com/DM871/dm871.github.io/blob/main/notebooks/sheet2.ipynb)            |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 7    L      | Duality Derivation:                                                    | [Slides][5]; [LN][25]; [F sec 5.1-5.5]                                                                                                              |            |
-|             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                                                                                                    |            |
-|             | Duality Theory:                                                        |                                                                                                                                                     |            |
-|             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                                                                                     |            |
-| L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | [Slides][6]; [LN][25]; [F sec 5.6-5.8]                                                                                                              |            |
-| E           | Exercises: Duality                                                     | [Sheet 3][53]                                                                                                                                       |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 8      L    | More on Duality                                                        |                                                                                                                                                     | Monday,    |
-|             | Duality by Lagrangian relaxation                                       |                                                                                                                                                     | Test 1     |
-| L           | Dual Simplex, Sensitivity Analysis                                     |                                                                                                                                                     |            |
-|             | Revised Simplex Method                                                 |                                                                                                                                                     |            |
-| E           | Dual Simplex and Revised Simplex                                       |                                                                                                                                                     |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 9        L  | Integer Programming - Overview                                         |                                                                                                                                                     |            |
-| L           | Modeling Examples, Formulations, Relaxations                           |                                                                                                                                                     |            |
-| E           | IP Modeling                                                            |                                                                                                                                                     |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 10        L | Relaxations, Cutting Planes                                            |                                                                                                                                                     | Monday,    |
-|             | Valid Inequalities. Chvatal Gomory cuts.                               |                                                                                                                                                     | Test 2     |
-| L           | Cutting plane algorithm. Gomory's fractional cutting plane algorithm   |                                                                                                                                                     |            |
-| E           | Cutting Planes and B&B                                                 |                                                                                                                                                     |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 11        L | Branch and Bound                                                       |                                                                                                                                                     |            |
-|             | Well Solved Problems                                                   |                                                                                                                                                     |            |
-|             | Convex hull description, Total unimodular matrices                     |                                                                                                                                                     |            |
-| L           | Network Flows                                                          |                                                                                                                                                     |            |
-| E           | Network Flows                                                          |                                                                                                                                                     |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 12        L | Network Flows: Application Examples                                    |                                                                                                                                                     |            |
-| L           | ILP Software                                                           |                                                                                                                                                     |            |
-| E           |                                                                        |                                                                                                                                                     |            |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 13          |                                                                        |                                                                                                                                                     | Monday,    |
-|             |                                                                        |                                                                                                                                                     | Test 3     |
-|-------------+------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------|
+| Week        | Topics                                                                 | Resources                                                                      | Activities |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| E           | Exercises: Linear Algebra Review                                       | [Sheet 0][50]; [Solutions][60]                                                 |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 5 L         | Course Organization                                                    | [Slides][1]; [LN pp 1-7][21]                                                   |            |
+|             | Introductory elements: Linear Programming, Notation                    |                                                                                |            |
+|             | Resource allocation in factory planning.                               | [HL ch 1,2,3]                                                                  |            |
+|             | Linear programming problems and geometrical interpretation.            | [MG ch 1,2, Appendix]                                                          |            |
+| L           | Diet problem                                                           | [Slides][2]; [LN pp 7-21][22]                                                  |            |
+|             | Fourier & Moutzkin elimination                                         | [Da] [wiki](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)  |            |
+|             | Notation: polyhedral analysis                                          | [F ch 1, 2]; [MG ch 4]; [HL sc 5.1]                                            |            |
+| E           | Exercises: LP Modeling                                                 | [Sheet 1][51]; [Solutions][61]                                                 |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 6        L  | Simplex Method                                                         | [Slides][3]; [LN][23]                                                          |            |
+|             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming) |            |
+|             | Gaussian Elimination                                                   | [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                       |            |
+|             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
+| L           | Exception Handling, degeneracies, pivot rules,                         | [Slides][4]; [LN][24]; [Compedium][522]                                        |            |
+|             | Initialization                                                         | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]; [TR]                                     |            |
+| E           | Exercises: Simplex Method                                              | [Sheet 2][52]; [Solutions (Marco)][62]; [Solutions (Joannes)][622]             |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 7    L      | Duality Derivation:                                                    | [Slides][5]; [LN][25]; [F sec 5.1-5.5]                                         |            |
+|             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                               |            |
+|             | Duality Theory:                                                        |                                                                                |            |
+|             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                |            |
+| L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | [Slides][6]; [LN][25]; [F sec 5.6-5.8]                                         |            |
+| E           | Exercises: Duality                                                     | [Sheet 3][53]                                                                  |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 8      L    | More on Duality                                                        |                                                                                | Monday,    |
+|             | Duality by Lagrangian relaxation                                       |                                                                                | Test 1     |
+| L           | Dual Simplex, Sensitivity Analysis                                     |                                                                                |            |
+|             | Revised Simplex Method                                                 |                                                                                |            |
+| E           | Dual Simplex and Revised Simplex                                       |                                                                                |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 9        L  | Integer Programming - Overview                                         |                                                                                |            |
+| L           | Modeling Examples, Formulations, Relaxations                           |                                                                                |            |
+| E           | IP Modeling                                                            |                                                                                |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 10        L | Relaxations, Cutting Planes                                            |                                                                                | Monday,    |
+|             | Valid Inequalities. Chvatal Gomory cuts.                               |                                                                                | Test 2     |
+| L           | Cutting plane algorithm. Gomory's fractional cutting plane algorithm   |                                                                                |            |
+| E           | Cutting Planes and B&B                                                 |                                                                                |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 11        L | Branch and Bound                                                       |                                                                                |            |
+|             | Well Solved Problems                                                   |                                                                                |            |
+|             | Convex hull description, Total unimodular matrices                     |                                                                                |            |
+| L           | Network Flows                                                          |                                                                                |            |
+| E           | Network Flows                                                          |                                                                                |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 12        L | Network Flows: Application Examples                                    |                                                                                |            |
+| L           | ILP Software                                                           |                                                                                |            |
+| E           |                                                                        |                                                                                |            |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
+| 13          |                                                                        |                                                                                | Monday,    |
+|             |                                                                        |                                                                                | Test 3     |
+|-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 
 
 
@@ -171,9 +171,13 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
+- [TR] Tim Roughgarden. [Beyond Worst-Case Analysis](https://cacm.acm.org/magazines/2019/3/234931-beyond-worst-case-analysis/fulltext). Communications of
+  the ACM, March 2019, Vol. 62 No. 3, Pages 88-96.
 
 
 #### Python
+
+- [Python: Getting Started](./notes/python_setup.html)
 
 - General tutorials from slides in DM561: 
   - [Part 1](https://dm561.github.io/assets/dm561-lec1.pdf): basics, data types, control flow, std library, OO programming
@@ -183,10 +187,13 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 <!--- - [Youtube series](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU) -->
 
+- [T0] [Colab on Python Basics](https://colab.research.google.com/github/DM561/dm561.github.io/blob/master/assets/Python_in_a_Nutshell.ipynb)
 
 - [T1] [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial.ipynb)
 
 - [T2] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
+
+- [T3] Python and Linear Programming (To come)
 
 
 #### Other Tools
@@ -248,6 +255,8 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
 [61]: {{ "/assets/Solutions/dm545_sheet1.pdf" | absolute_url }}
 [62]: {{ "/assets/Solutions/dm545_sheet2.pdf" | absolute_url }}
+[622]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/sheet2.ipynb" | absolute_url }}
+
 
 
 

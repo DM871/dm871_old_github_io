@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		<!-- For non-desktop browsers -->
+		<title>Introduktion til Linux på IMADA</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/linuxintro.css">
+		<style>
+		 kbd {color: #000; background-color: #dfdfdf}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>Linux</h1>
+				</div>
+				<div class="panel-body">
+				  <h2>Kommandoer fra CodeAcademy kurset</h2>
+				  <p><kbd>ls</kbd> – list contents (all files and directories) of the directory. (Similar to <kbd>dir</kbd>).<br>
+				    <kbd>pwd</kbd> - stands for “print working directory”.<br>
+				    <kbd>cd</kbd> - stands for “change directory”.<br>
+				    <kbd>cd ../feb</kbd><br>
+			        <kbd>cd ../../2014/feb</kbd></p>
+				  <p><kbd>mkdir media</kbd> - create a new directory in the working directory<br>
+				    <kbd>touch keyboard.txt</kbd> - create an empty file inside the working directory.<br>
+			      </p>
+				  <p><kbd>ls -a</kbd>  - lists all contents, including hidden files and directories<br>
+				    <kbd>-l</kbd> - lists all contents of a directory in long format<br>
+				    <kbd>-t</kbd> - order files and directories by the time they were last modified.</p>
+				  <p><kbd>ls -alt</kbd> - lists all contents, including hidden files and directories, in long format, ordered by the date and time they were last modified.</p>
+				  <p><kbd>cp frida.txt lincoln.txt</kbd> - cp command copies files or directories, we copy the contents of frida.txt into lincoln.txt.<br>
+				    <kbd>cp * satire/</kbd> - wildcards *, copy all to satire.<br>
+				    <kbd>cp m*.txt scifi/</kbd> - copy all text files starting with “m”. </p>
+				  <p><kbd>mv superman.txt superhero/</kbd> - move file.<br>
+				    <kbd>mv wonderwoman.txt batman.txt superhero/</kbd> - move several files.<br>
+				   <kbd> mv batman.txt spiderman.txt</kbd> - batman.txt has been renamed to spiderman.txt.</p>
+				  <p><kbd>rm waterboy.txt</kbd> - remove files.<br>
+				    <kbd>rm -r slapstick</kbd> - remove directory. The <kbd>-r</kbd> is an option that modifies the behavior of the rm command. The <kbd>-r</kbd> stands for “recursive,” and it’s used to delete a directory and all of its child directories.</p>
+				  <p><kbd>echo "Hello"</kbd> - print to the console.<br>
+				    <kbd>echo "Hello" > hello.txt</kbd> - write Hello to the file hello.txt. The <kbd>></kbd> command redirects the standard output to a file.</p>
+				  <p><kbd>cat hello.txt</kbd> - open file.<br>
+				    <kbd>cat oceans.txt > continents.txt</kbd> - Here the standard output of cat oceans.txt is redirected to continents.txt. > overwrites all original content in continents.txt.</p>
+				  <p><kbd>cat glaciers.txt >> rivers.txt</kbd> - The standard output of the command on the left is appended (added) to the file on the right.</p>
+				  <p><kbd>cat < lakes.txt</kbd> - The <kbd><</kbd> takes the standard input from the file on the right and inputs it into the program on the left. Here, lakes.txt is the standard input for the cat command. The standard output appears in the terminal. (Similar to <kbd>cat lakes.txt</kbd>).</p>
+				  <p><kbd>wc - outputs the number of lines, words, and characters in volcanoes.txt, respectively.</p>
+				  <p><kbd>cat volcanoes.txt | wc</kbd> - The | “pipe” takes the standard output of the command on the left, and pipes it as standard input to the command on the right. You can think of this as “command to command” redirection. Here the output of cat volcanoes.txt is the standard input of wc. </p>
+				  <p><kbd>cat volcanoes.txt | wc | cat > islands.txt</kbd> - Multiple <kbd>|</kbd> can be chained together. Here the standard output of cat volcanoes.txt is “piped” to the wc command. The standard output of wc is then “piped” to cat. Finally, the standard output of cat is redirected to islands.txt.</p>
+				  <p><kbd>sort lakes.txt</kbd> - sorts contents alphabetically.<br>
+				    <kbd>cat lakes.txt | sort > sorted-lakes.txt</kbd> - Here, the command takes the standard output from cat lakes.txt and “pipes” it to sort. The standard output of sort is redirected to sorted-lakes.txt.</p>
+				  <p><kbd>uniq deserts.txt</kbd> - show only unique entries. Filters out adjacent, duplicate lines in a file.<br>
+				    <kbd>sort deserts.txt | uniq</kbd> - A more effective way to call uniq is to call sort to alphabetize a file, and “pipe” the standard output to uniq. Here by piping sort deserts.txt to uniq, all duplicate lines are alphabetized (and thereby made adjacent) and filtered out.</p>
+				  <p><kbd>grep Mount mountains.txt</kbd> - grep stands for “global regular expression print”. It searches files for lines that match a pattern. Here, grep searches for “Mount” in mountains.txt.</p>
+				  <p><kbd>grep -i Mount mountains.txt</kbd> - grep -i enables the command to be case insensitive. Here, grep searches for capital or lowercase strings that match Mount in mountains.txt.</p>
+				  <p><kbd>grep -R Arctic /home/ccuser/workspace/geography</kbd> - The grep can also be used to search within a directory. One can use regular expressions to search for patterns in files. -R stands for “recursive”.</p>
+				  <p><kbd>grep -Rl Arctic /home/ccuser/workspace/geography</kbd> - The grep <kbd>-Rl</kbd> searches all files in a directory and outputs only filenames with matched results. <kbd>-R</kbd> stands for “recursive” and <kbd>l</kbd> stands for “files with matches”. </p>
+				  <p><kbd>sed 's/snow/rain/' forests.txt</kbd> - The sed stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace”.<br>
+				    s: stands for “substitution”. it is always used when using sed for substitution.<br>
+				    snow: the search string, the text to find.<br>
+				    rain: the replacement string, the text to add in place.<br>
+			      </p>
+				  <p><kbd>sed 's/snow/rain/g' forests.txt</kbd> - The above command uses the g expression, meaning “global”. Here sed searches forests.txt for the word “snow” and replaces it with “rain”, globally. All instances of “snow” on a line will be turned to “rain”.<br>
+			      </p>
+				  <p><kbd>nano hello.txt</kbd> - open the nano text editor. Ctrl + O (the letter, not the number) to save the file. Press Enter. Ctrl + X exits the nano program. ‘X’ stands for exit.</p>
+				  <p><kbd>nano ~/.bash_profile</kbd> - The ~ represents the user’s home directory. The . indicates a hidden file. ~/.bash_profile is the name of file used to store environment settings.</p>
+				  <p><kbd>source ~/.bash_profile</kbd> - activates the changes in ~/.bash_profile</kbd> for the current session. Instead of closing the terminal and needing to start a new session, source makes the changes available right away in the session we are in.<br>
+			      </p>
+				  <p><kbd>alias pd="pwd"</kbd> - The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands. Here alias pd="pwd" creates the alias pd for the pwd command, which is then saved in the bash profile. Each time you enter pd, the output will be the same as the pwd command.</p>
+				</div>
+			</div>
+			<div class="buttons">
+	            <a class="btn btn-default" href="index.htm">Start</a>
+				<a class="btn btn-primary" href="itsyst.htm">IT systemer på SDU</a>
+				<a class="btn btn-primary" href="komandolin.htm">Kommandolinjen</a>
+                <a class="btn btn-primary" href="fjern.htm">Fjernadgang</a>
+		</div>
+	</body>
+</html>
