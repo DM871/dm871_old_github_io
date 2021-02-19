@@ -6,12 +6,16 @@ date:   2021-02-17 09:33:19 +0100
 categories: notes, python
 ---
 
-## Python: Getting Started
 
+## Python: Getting Started
+{:.no_toc}
 
 Python is quickly gaining momentum as a fundamental tool in scientific
 computing.
 
+
+* A list of contents
+{:toc}
 
 
 
@@ -99,8 +103,8 @@ or [Atom](https://atom.io/)), then one must work in the Windows
 directories. For example:
 
 ```bash
-mkdir /mnt/c/Users/username/Desktop/MyPythonCode
-cd /mnt/c/Users/username/Desktop/MyPythonCode
+$ mkdir /mnt/c/Users/username/Desktop/MyPythonCode
+$ cd /mnt/c/Users/username/Desktop/MyPythonCode
 ```
 
 If one really wants to know where the Linux files are from Windows,
@@ -116,10 +120,10 @@ reccomended to call the program with the executable `python3`. For
 example to execute a script in python (see also below):
 
 ```bash
-$ python3 asg0-onlytesting/onlytesting.py
+$ python3 my_script.py
 ```
 
-If you want to learn more commands for a Unix shell, here are some pointers:<br>
+If you want to learn more about commands for the Unix shell, here are some pointers:<br>
 - [Review this tutorial on Linux/GNU](https://imada.sdu.dk/~jlandersen/teaching/linux/).<br>
 - [More on command-line tools from CodeAcademy]({{ "/notes/komando.html" | absolute_url }}).<br>
 
@@ -131,9 +135,11 @@ If you want to learn more commands for a Unix shell, here are some pointers:<br>
 A *Python package manager* is a tool for installing or updating
 Python packages, which involves downloading the right source code
 files, placing those files in the correct location on the machine,
-and linking the files to the Python interpreter. **Never** try to
+and linking the files to the Python interpreter.
+<!--- Never try to
 install a Python package without using a package manager (see
 <https://xkcd.com/349/>).
+-->
 
 #### Pip
 
@@ -149,7 +155,7 @@ $ sudo apt-get install python3-pip
 |`pip3 install package-name`          |  Install the specified package.|
 |`pip3 install --upgrade package-name`          |  Update the specified package.|
 |`pip3 freeze`          |  Display the version number on all installed packages.|
-|`pip3 --<<help>>`          |  Display the documentation for `pip`.|
+|`pip3 <command> --help`          |  Display the documentation for `pip`.|
 |---------| -------------------------------------------------------|
 
 See <https://pip.pypa.io/en/stable/user_guide/> for more complete
@@ -238,7 +244,7 @@ at a time via the Python interpreter.
 ```python
 $ python                            # Start the Python interpreter.
 >>> print("This is plain Python.")  # Execute some code.
-<<This is plain Python.>>
+This is plain Python.
 ```
 
 There are, however, more useful interfaces. Chief among these is
@@ -249,10 +255,10 @@ the command.
 >>> exit()                          # Exit the Python interpreter.
 $ ipython                           # Start IPython or jupyter-console for Jupyter
 
-<g<In [1]:>g> print("This is IPython!")   # Execute some code.
-<<This is IPython!>>
+In [1]: print("This is IPython!")   # Execute some code.
+This is IPython!
 
-<g<In [2]:>g> <p<%run>p> python_intro.py         # Run a particular Python script.
+In [2]: %run python_intro.py         # Run a particular Python script.
 Hello, world!
 ```
 
@@ -265,26 +271,26 @@ interactive help.
 ```python
 # A list is a basic Python data structure. To see the methods associated with
 # a list, type the object name (list), followed by a period, and press tab.
-<g<In [1]:>g> list.   # Press 'tab'.
-              <<append()  count()   insert()  remove()
-              clear()   extend()  mro()     reverse()
-              copy()    index()   pop()     sort()>>
+In [1]: list.   # Press 'tab'.
+append()  count()   insert()  remove()
+clear()   extend()  mro()     reverse()
+copy()    index()   pop()     sort()
 
 # To learn more about a specific method, use a '?' and hit 'Enter'.
-<g<In [1]:>g> list.append?
-<<Docstring: L.append(object) -> None -- append object to end
-Type:      method_descriptor>>
+In [1]: list.append?
+Docstring: L.append(object) -> None -- append object to end
+Type:      method_descriptor
 
-<g<In [2]:>g> help()                      # Start IPython's interactive help utility.
+In [2]: help()                      # Start IPython's interactive help utility.
 
-<<help>>> list                          # Get documentation on the list class.
-<<Help on class list in module __builtin__:
+help>>> list                          # Get documentation on the list class.
+Help on class list in module __builtin__:
 
 class list(object)
  |  list() -> new empty list
  |  >># ...                           # Press 'q' to exit the info screen.
 
-<<help>>> quit                          # End the interactive help session.
+help>>> quit                          # End the interactive help session.
 ```
 
 Use IPython side-by-side with a text editor to test syntax and small
@@ -335,16 +341,16 @@ file, that file can be executed in the terminal or command line.
 $ ls                        # List the files in the current directory.
 hello_world.py
 $ cat hello_world.py        # Print the contents of the file to the terminal.
-<<print("hello, world!")>>
+print("hello, world!")
 $ python3 hello_world.py     # Execute the file.
-<<hello, world!>>
+hello, world!
 
 # Alternatively, start IPython and run the file.
 $ ipython3
-<<IPython 7.9.0 -- An enhanced Interactive Python. Type '?' for help.>>
+IPython 7.9.0 -- An enhanced Interactive Python. Type '?' for help.
 
-<g<In [1]>g>: <p<%run>p> hello_world.py
-<<hello, world!>>
+In [1]: %run hello_world.py
+hello, world!
 ```
 
 IPython is an enhanced version of Python that is more user-friendly
@@ -399,9 +405,8 @@ each of the following IDEs.
     Try opening a notebook file, eg, <span>code
     mynotebook.ipynb</span>.
 
--   JupyterLab: <http://jupyterlab.readthedocs.io/en/stable/>
-
--   PyCharm: <https://www.jetbrains.com/pycharm/>
+- <span>Atom:</span> <https://atom.io/> [Atom is very flexible and can
+    go from a text editor to an IDE thanks to the many plugins]
 
 -   Spyder: (an IDE similar to Matlab and RStudio)
     <https://www.spyder-ide.org/>, or to avoid the Anaconda
@@ -411,6 +416,10 @@ each of the following IDEs.
 
 -   Eclipse with PyDev: <http://www.eclipse.org/>,
     <https://www.pydev.org/>
+
+-   JupyterLab: <http://jupyterlab.readthedocs.io/en/stable/>
+
+-   PyCharm: <https://www.jetbrains.com/pycharm/>
 
 See <https://realpython.com/python-ides-code-editors-guide/> for a
 good overview of these (and other) workflow tools.
