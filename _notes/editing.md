@@ -6,8 +6,61 @@ date:   2021-01-31 09:33:19 +0100
 categories: notes
 ---
 
-## Tools for digitalizing answers to the tests 
+## Preparation for take-home assignments 
 
+
+### Instructions on the front page of the test
+
+This is one of a series of three tests that constitute the exam of
+the course. The test consists of a number of tasks divided into
+subtasks. The answers must be collected in a unique PDF document and are
+to be handed in electronically in ItsLearning (to be confirmed)
+
+-   **The test is individual. You are not allowed to collaborate by any
+    means with other persons**.
+
+- Your answers will be assessed by the teacher, the instructor and an
+    external censor. Moreover, the answers will be grouped by subtasks
+    by an automated parser tool.  Therefore, it is very important that
+    you follow the instructions below.
+
+-   Keep your answers anonymous but make sure that you specify your
+    exam number. Use the Latex and Word templates provided in the
+    external web page to see where to specify the exam number.
+
+-   In the PDF document make sure that you start a new page for every
+    SUBTASK and you write a section title that includes the word
+    “Subtask”, specifying which SUBTASK you are addressing. Use the
+    Latex and Word templates provided in the external web page.
+
+-   You can write your answers in Danish or in English.
+
+-   <span>*Remember to justify all your statements!*</span> It is not
+    sufficient to present an answer, you must show how you found it. You
+    may refer to results from the lecture notes, the slides or the books
+    listed at the course web page. References to other books (outside
+    the course material) or to internet links are not accepted as valid
+    answers to a task.
+
+-   You are allowed to use tools such as Python to assist you
+    the calculations. If you report source code in Python or other
+    languages, you must also report the output it produces
+    when executed.
+
+-   Make sure you take security copies of your documents while the test
+    is in progress. It is your own responsibility in case of
+    technical issues.
+
+- Tools and tutorials for types setting your answers are available
+    from the Public Web Page:\ Assessment $\rightarrow$ Preparation
+    for the take-home assignments. (This page below.)
+
+-   The contribution to the final evaluation of each task, if carried
+    out correctly, is given at the beginning of each task as a list of
+    points for each subtask. The maximum total score is 100.
+
+
+### Templates
  
 <!--
 
@@ -15,30 +68,15 @@ categories: notes
 
 -->
 
--   Recommended answer templates (To Come)
+-   Recommended answer templates: 
+    - [Latex](../assets/Templates/template_answers.tex) ([PDF](../assets/Templates/template_answers.pdf))
+    - [Word](../assets/Templates/Template_Wordformat.docx) 
+    - [OpenDocument](../assets/Templates/Template_Writerformat.odt)
 
 
-<!---
-
-[Latex](./Files/template_answers.tex)
-        ([PDF](./Files/template_answers_DM559.pdf)) |
-        [Word](./Files/Template_Wordformat.docx) |
-        [OpenDocument](./Files/Template_Writerformat.odt)
-
--->
+### Aiding tools
 
 <!-- -->
-
--   You can write your answers as you prefer in Danish or in English.
-    Choose the language with which you are faster.
-
--   If you report Python code, you must also report the output it
-    produces when executed.
-
--   Make sure that you make periodic backup copies of your documents
-    during the test. It is your own responsability in case of
-    technical issues.
-
 
 -   Digital pens and scanners.
 
@@ -57,7 +95,7 @@ categories: notes
 -   Alternatives to Python for matrix calculations: R, MATLAB,
     Maple, etc.
 
--  [Simple Method tool](https://www.zweigmedia.com/simplex/simplex.php?lang=en)
+-   [WC] Stefan Waner and Steven R. Costenoble. [Simplex Method tool](https://www.zweigmedia.com/simplex/simplex.php?lang=en)
 
 -   Text editor in VERBATIM mode (Unix: EMACS + ORG mode; Win:
     Gusek, etc)
@@ -67,7 +105,6 @@ categories: notes
     grapher in Mac, [graph.tk](http://graph.tk), tikz in Latex.
 
 
-
 -   To write ILP models in Latex you can use one of the following
     templates:
 
@@ -75,17 +112,15 @@ categories: notes
 ``` {.latex}
 \begin{align}
    \label{ob} \max \; \quad & \sum_{j=1}^nc_jx_j  \\
-   \label{c1} \mbox{s.t.} \quad &\sum\limits_{j=1}^n a_{ij}x_j\geq b_i,
-   \quad i=1,\ldots,m \\
-\label{c2}   &x_j \geq 0, \quad j=1,\ldots,n   
+   \label{c1} \mbox{s.t.} \quad &\sum\limits_{j=1}^n a_{ij}x_j\geq b_i, \quad i=1,\ldots,m \\
+   \label{c2} &x_j \geq 0, \quad j=1,\ldots,n   
 \end{align}
 ```
 
 $$\begin{align}
    \label{ob} \max \; \quad & \sum_{j=1}^nc_jx_j  \\
-   \label{c1} \mbox{s.t.} \quad &\sum\limits_{j=1}^n a_{ij}x_j\geq b_i,
-   \quad i=1,\ldots,m \\
-\label{c2}   &x_j \geq 0, \quad j=1,\ldots,n   
+   \label{c1} \mbox{s.t.} \quad &\sum\limits_{j=1}^n a_{ij}x_j\geq b_i, \quad i=1,\ldots,m \\
+   \label{c2} &x_j \geq 0, \quad j=1,\ldots,n   
 \end{align}
 $$
 
@@ -95,8 +130,8 @@ $$
 \begin{equation}
  \begin{array}{lrll}
   \max & \sum\limits_{j=1}^nc_jx_j\\
-  &\sum\limits_{j=1}^n a_{ij}x_j&\leq b_i,& i=1,\ldots,m\\
-  &x_j&\geq 0,& j=1,\ldots,n
+  & \sum\limits_{j=1}^n a_{ij}x_j & \leq b_i,& i=1,\ldots,m\\
+  & x_j&\geq 0, & j=1,\ldots,n
  \end{array}
 \end{equation}
 ```
@@ -111,14 +146,17 @@ $$
 
 
 ``` {.latex}
-\begin{equation}\label{ob}
-  \max  \sum_{j=1}^nc_jx_j\\
+\begin{equation}
+\label{ob}
+\max  \sum_{j=1}^nc_jx_j\\
 \end{equation}
-\begin{equation}\label{c1}
-  \sum_{j=1}^n a_{ij}x_j\leq b_i, i=1,\ldots,m\\
+\begin{equation}
+\label{c1}
+\sum_{j=1}^n a_{ij}x_j\leq b_i, i=1,\ldots,m\\
 \end{equation}
-\begin{equation}\label{c2}
-  x_j\geq 0, j=1,\ldots,n
+\begin{equation}
+\label{c2}
+x_j\geq 0, j=1,\ldots,n
 \end{equation}
 ```
 

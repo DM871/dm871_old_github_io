@@ -230,7 +230,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 - Reexam: Oral in August
 
 
-- [Instructions for the take-home assignments](./notes/editing.html)
+- [Preparation for the take-home assignments](./notes/editing.html)
 
 
 
