@@ -80,19 +80,19 @@ w3.includeHTML();
 |             | Duality Theory:                                                        |                                                                                                    |            |
 |             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                                    |            |
 | L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | [Slides][6]; [LN][25]; [F sec 5.6-5.8]; [Va sc 7.1]; [CL ch 2]                                     |            |
-| E           | Exercises: Duality                                                     | [Sheet 3][53]; [Solutions][63]                                                                                               |            |
+| E           | Exercises: Duality                                                     | [Sheet 3][53]; [Solutions][63]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 8      L    | Sensitivity Analysis                                                   | [HL sc 7.1, 4.7]                                                                                   | Tuesday,   |
 |             | Revised Simplex Method                                                 | [Slides][7]; [LN][26]; [F, sec 4.3]; [[Ch ch 7](./assets/Ch-Revised.pdf)]; [HL ch 5]; [Va 6.1-6.5] | Test 1     |
-| L           | LP Software                                                            | [SS]; Section Python below                                                                         |            |
-|             | (Farkas Lemma)                                                         |                                                                                                    |            |
+| L           | Integer Programming - Overview                                         | [Slides][8]; [LN][27]; [F, ch 2, sc 6.1]                                                           |            |
+|             | Modeling examples                                                      | [MG sc 6.4, 6.6, ch 3]; [Wo ch 1]; [Wi ch 9.1-9.5]                                                 |            |
 | E           | Sensitivity Analysis, Revised Simplex Method                           | [Sheet 4][54]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 9        L  | Integer Programming - Overview                                         |                                                                                                    |            |
-| L           | Modeling Examples, Formulations, Relaxations                           |                                                                                                    |            |
+| 9        L  | Formulations, Relaxations                                              |                                                                                                    |            |
+| L           | Cutting Planes                                                         |                                                                                                    |            |
 | E           | IP Modeling                                                            |                                                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 10        L | Relaxations, Cutting Planes                                            |                                                                                                    | Monday,    |
+| 10        L | More on IP                                                             |                                                                                                    | Monday,    |
 |             | Valid Inequalities. Chvatal Gomory cuts.                               |                                                                                                    | Test 2     |
 | L           | Cutting plane algorithm. Gomory's fractional cutting plane algorithm   |                                                                                                    |            |
 | E           | Cutting Planes and B&B                                                 |                                                                                                    |            |
@@ -115,6 +115,8 @@ w3.includeHTML();
 
 <!---
 ,[./Training/dm545_sheet0.pdf][Sheet0 with python]]; intro to Python: [[./Slides/dm545_python1.pdf][1] [[./Slides/dm545_python2.pdf][2] |            |
+LP Software                                                            | [SS]; Section Python below                                                                         |            |
+(Farkas Lemma)                                                         |                                                                                                    |            |
 -->
 
 
@@ -246,6 +248,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [5]: {{ "/assets/dm545_handout_lec05_duality.pdf" | absolute_url }}
 [6]: {{ "/assets/dm545_handout_lec06_duality-2.pdf" | absolute_url }}
 [7]: {{ "/assets/dm545_handout_lec07_revised.pdf" | absolute_url }}
+[8]: {{ "/assets/dm545_handout_lec08_ip-intro.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
@@ -256,6 +259,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [24]: {{ "/assets/dm545-main.pdf#exceptions" | absolute_url }}
 [25]: {{ "/assets/dm545-main.pdf#duality" | absolute_url }}
 [26]: {{ "/assets/dm545-main.pdf#revised" | absolute_url }}
+[27]: {{ "/assets/dm545-main.pdf#mipmodeling" | absolute_url }}
 
 <!--- Sheets -->
 [50]: {{ "/assets/dm545_sheet0.pdf" | absolute_url }}
@@ -302,7 +306,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 |            |                                                                      |                                                                                                                                                                                  | Test 1     |
 | E          | Duality                                                              | [[./Training/dm545_sheet3.pdf][Sheet3]]                                                            [[./Resources/Ipython/sheet3_2019.html][Sheet3 (Johannes)]];  [[./Training/Solutions/dm545_sheet3.pdf][Sheet3 (Marco)                                                 |            |
 |------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------|
-| 9          | Integer Programming - Overview                                       | *[MG sc 6.4, 6.6, ch 3]* *[Wo ch 1]* @@html:<br>@@ [Wi ch 9.1-9.5]                                                                                                                            |            |
+| 9          | Integer Programming - Overview                                       |
 |            | Modeling Examples, Formulations, Relaxations                         | *[Wo ch 2]*                                                                                                                                                                                   |            |
 | E          | Dual Simplex and Revised Simplex                                     | [[./Training/dm545_sheet4.pdf][Sheet4]]                                                           [[./Resources/Ipython/sheet4_2019.html][Sheet4 (Johannes)]];  [[./Training/Solutions/dm545_sheet4.pdf][Sheet4 (Marco)                                                  |            |
 |------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------|
