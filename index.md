@@ -89,16 +89,16 @@ w3.includeHTML();
 | E           | Sensitivity Analysis, Revised Simplex Method                           | [Sheet 4][54]; [Solutions][64]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 9        L  | More Modeling Examples                                                 | [Slides][8]; [LN sc 5.2, 5.3]; [MG sc 6.4, 6.6, ch 3]; [Wo ch 1]; [Wi ch 9.1-9.5]                  |            |
-| L           | Formulations, Relaxations                                              | [Slides][9]; [LN sc 5.4, 6]; [Wo ch 2]                                                             |            |
-| E           | IP Modeling                                                            | [Sheet 5][54]                                                                                      |            |
+| L           | Formulations, Relaxations                                              | [Slides]; [LN sc 5.4, 6]; [Wo ch 2]                                                                |            |
+| E           | IP Modeling                                                            | [Sheet 5][55]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 10        L | Cutting Planes                                                         |                                                                                           | Tuesday,   |
+| 10        L | Cutting Planes                                                         |                                                                                                    | Tuesday,   |
 |             | Valid Inequalities. Chvatal Gomory cuts.                               |                                                                                                    | Test 2     |
 | L           | Cutting plane algorithm. Gomory's fractional cutting plane algorithm   | [F sc 6.3]; [Wo ch 8.1-8.6]                                                                        |            |
 | E           | Cutting Planes                                                         |                                                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 11        L | Branch and Bound                                                       | [F sc 6.4]; [Wo ch 7]; [CL ch 7]                                                          |            |
-|             | Well Solved Problems                                                   | [F sc 6.2]; [Wo sec. 3.2-3.5]                                                                                        |            |
+| 11        L | Branch and Bound                                                       | [F sc 6.4]; [Wo ch 7]; [CL ch 7]                                                                   |            |
+|             | Well Solved Problems                                                   | [F sc 6.2]; [Wo sec. 3.2-3.5]                                                                      |            |
 |             | Convex hull description, Total unimodular matrices                     |                                                                                                    |            |
 | L           | Network Flows                                                          |                                                                                                    |            |
 | E           | Network Flows                                                          |                                                                                                    |            |
@@ -225,7 +225,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - Ordinary exam: 24h take-home tests:
   - Test 1: week 8, February 23, from 8:00 to 7:59
-  - Test 2: week 10, March 8, from 8:00 to 7:59
+  - Test 2: week 10, March 9, from 8:00 to 7:59
   - Test 3: week 13, March 29, from 8:00 to 7:59
 
 
