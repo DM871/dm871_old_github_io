@@ -89,7 +89,7 @@ w3.includeHTML();
 | E           | Sensitivity Analysis, Revised Simplex Method                           | [Sheet 4][54]; [Solutions][64]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 9        L  | More Modeling Examples                                                 | [Slides][8]; [LN sc 5.2, 5.3]; [MG sc 6.4, 6.6, ch 3]; [Wo ch 1]; [Wi ch 9.1-9.5]                  |            |
-| L           | Formulations, Relaxations                                              | [Slides]; [LN sc 5.4, 6]; [Wo ch 2]                                                                |            |
+| L           | Formulations, Relaxations                                              | [Slides][9]; [LN sc 5.4, 6]; [Wo ch 2]                                                             |            |
 | E           | IP Modeling                                                            | [Sheet 5][55]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 10        L | Cutting Planes                                                         |                                                                                                    | Tuesday,   |
@@ -249,6 +249,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [6]: {{ "/assets/dm545_handout_lec06_duality-2.pdf" | absolute_url }}
 [7]: {{ "/assets/dm545_handout_lec07_revised.pdf" | absolute_url }}
 [8]: {{ "/assets/dm545_handout_lec08_ip-intro.pdf" | absolute_url }}
+[9]: {{ "/assets/dm545_handout_lec09_formulations.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
