@@ -9,7 +9,7 @@ categories: optimization spreadsheets
 
 
 
-- [Slides]({{ "../assets/dm545_handout_spreadsheets.pdf" | relative_url }})
+- [Slides]({{ "../assets/dm545_handout_spreadsheet.pdf" | relative_url }})
 
 - Mathematical optimization in spreadsheets:
 
