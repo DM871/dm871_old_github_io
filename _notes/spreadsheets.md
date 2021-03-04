@@ -37,6 +37,8 @@ Princeton University Press, Princeton, New Jersey, 1963.)
 
 	- Capital budgeting (from FrontlineSolvers)
 
+   - Transhipment problem
+
 <!-- https://www.solver.com/optimization-solutions-corporate-finance-examples -->
 
 
