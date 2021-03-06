@@ -92,12 +92,12 @@ w3.includeHTML();
 | L           | Formulations, Relaxations                                              | [Slides][9]; [LN sc 5.4, 6]; [Wo ch 2]                                                             |            |
 | E           | IP Modeling                                                            | [Sheet 5][55]; [Solutions][64]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 10        L | Cutting Planes                                                         | [Slides][10]                                                                                       | Tuesday,   |
-|             | Valid Inequalities. Chvatal Gomory cuts.                               |                                                                                                    | Test 2     |
-| L           | Cutting plane algorithm. Gomory's fractional cutting plane algorithm   | [F sc 6.3]; [Wo ch 8.1-8.6]                                                                        |            |
-| E           | Cutting Planes                                                         |                                                                                                    |            |
+| 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10]                                                                                       | Tuesday,   |
+|             |                                                                        | [F sc 6.3]; [Wo ch 8.1-8.6]                                                                        | Test 2     |
+| L           | Branch and Bound                                                       | [slides][11]; [F sc 6.4]; [Wo ch 7]; [CL ch 7]                                                     |            |
+| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 11        L | Branch and Bound                                                       | [F sc 6.4]; [Wo ch 7]; [CL ch 7]                                                                   |            |
+| 11        L |                                                                        |                                                                                                    |            |
 |             | Well Solved Problems                                                   | [F sc 6.2]; [Wo sec. 3.2-3.5]                                                                      |            |
 |             | Convex hull description, Total unimodular matrices                     |                                                                                                    |            |
 | L           | Network Flows                                                          |                                                                                                    |            |
@@ -250,7 +250,8 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [7]: {{ "/assets/dm545_handout_lec07_revised.pdf" | absolute_url }}
 [8]: {{ "/assets/dm545_handout_lec08_ip-intro.pdf" | absolute_url }}
 [9]: {{ "/assets/dm545_handout_lec09_formulations.pdf" | absolute_url }}
-[10]: {{ "/assets/dm545_handout_cut_alg.pdf" | absolute_url }}
+[10]: {{ "/assets/dm545_handout_lec10_cut-alg.pdf" | absolute_url }}
+[11]: {{ "/assets/dm545_handout_lec11_bnb.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
@@ -271,6 +272,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [53]: {{ "/assets/dm545_sheet3.pdf" | absolute_url }}
 [54]: {{ "/assets/dm545_sheet4.pdf" | absolute_url }}
 [55]: {{ "/assets/dm545_sheet5.pdf" | absolute_url }}
+[56]: {{ "/assets/dm545_sheet6.pdf" | absolute_url }}
 
 <!--- Solutions -->
 [60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
