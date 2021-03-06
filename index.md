@@ -94,7 +94,7 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10]                                                                                       | Tuesday,   |
 |             |                                                                        | [F sc 6.3]; [Wo ch 8.1-8.6]                                                                        | Test 2     |
-| L           | Branch and Bound                                                       | [slides][11]; [F sc 6.4]; [Wo ch 7]; [CL ch 7]                                                     |            |
+| L           | Branch and Bound                                                       | [slides][11]; [F sc 6.4]; [Wo ch 7]                                                                |            |
 | E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L |                                                                        |                                                                                                    |            |
@@ -150,7 +150,7 @@ LP Software                                                            | [SS]; S
 - [Da] G.B. Dantzig.  [Linear Programming](http://dx.doi.org/10.1287/opre.50.1.42.17798). Operations Research, 2002, 50(1), 42-47
 
 
-<!---  [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 -->
+<-- [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 -->
 
 
 - [AMO] R.K. Ahuja, T.L. Magnanti and J. Orlin. Network Flows: Theory, Algorithms, and Applications. Prentice Hall, 1993
