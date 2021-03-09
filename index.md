@@ -209,6 +209,8 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [SS] [Mathematical Optimization in SpreadSheets](./notes/spreadsheets.html)
 
+- [GRB] [Gurobi](./assets/dm545_lab_gurobi.pdf)
+
 
 #### Other links
 
