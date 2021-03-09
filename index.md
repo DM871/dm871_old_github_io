@@ -149,7 +149,7 @@ LP Software                                                            | [SS]; S
 - [Da] G.B. Dantzig.  [Linear Programming](http://dx.doi.org/10.1287/opre.50.1.42.17798). Operations Research, 2002, 50(1), 42-47
 
 
-<-- [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 -->
+<!--- [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 --->
 
 
 - [AMO] R.K. Ahuja, T.L. Magnanti and J. Orlin. Network Flows: Theory, Algorithms, and Applications. Prentice Hall, 1993
