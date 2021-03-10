@@ -94,11 +94,10 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10]                                                                                       | Tuesday,   |
 |             |                                                                        | [LN ch 8]; [Wo ch 8.1-8.6]; [F sc 6.3]                                                             | Test 2     |
-| L           | Branch and Bound                                                       | [Slides][11]; [LN ch 9]; [Wo ch 7]; [F sc 6.4]                                                     |            |
+| L           | Branch and Bound                                                       | [Slides][11]; [LN ch 9]; [Wo ch 7]; [F sc 6.4]; [GRB]                                              |            |
 | E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 11        L | Well Solved Problems                                                   | [F sc 6.2]; [Wo sec. 3.2-3.5]                                                                      |            |
-|             | Total unimodular matrices                                              |                                                                                                    |            |
+| 11        L | Well Solved Problems: Total unimodular matrices                        | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
 | L           | Network Flows                                                          |                                                                                                    |            |
 | E           | Network Flows                                                          |                                                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
@@ -191,7 +190,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [T2] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
-- [T3] Python and Linear Programming (To come)
+- [GRB] [Integer Linear Programming with Python and Gurobi](./assets/dm545_lab_gurobi.pdf)
 
 
 #### Other Tools
@@ -206,7 +205,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [SS] [Mathematical Optimization in SpreadSheets](./notes/spreadsheets.html)
 
-- [GRB] [Gurobi](./assets/dm545_lab_gurobi.pdf)
+
 
 
 #### Other links
@@ -250,6 +249,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [9]: {{ "/assets/dm545_handout_lec09_formulations.pdf" | absolute_url }}
 [10]: {{ "/assets/dm545_handout_lec10_cut-alg.pdf" | absolute_url }}
 [11]: {{ "/assets/dm545_handout_lec11_bnb.pdf" | absolute_url }}
+[12]: {{ "/assets/dm545_handout_lec11_netflow.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
