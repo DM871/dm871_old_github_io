@@ -208,13 +208,9 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
-#### Other links
-
-- ["What is O.R.?" The movie](http://www.learnaboutor.co.uk/flash/16_plus_movie.htm)
-
+<!---
 - Optimization at DSB-S: ["Sæt dog et andet tog ind - hvor svært kan det være?"](https://www.youtube.com/watch?v=L2gR0_gmL94) by Jens Clausen, former Professor at DTU Management
-
-
+-->
 
 
 ### Assessment
@@ -249,7 +245,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [9]: {{ "/assets/dm545_handout_lec09_formulations.pdf" | absolute_url }}
 [10]: {{ "/assets/dm545_handout_lec10_cut-alg.pdf" | absolute_url }}
 [11]: {{ "/assets/dm545_handout_lec11_bnb.pdf" | absolute_url }}
-[12]: {{ "/assets/dm545_handout_lec11_netflow.pdf" | absolute_url }}
+[12]: {{ "/assets/dm545_handout_lec12_netflow.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
