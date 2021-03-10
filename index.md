@@ -148,15 +148,15 @@ LP Software                                                            | [SS]; S
 
 - [Da] G.B. Dantzig.  [Linear Programming](http://dx.doi.org/10.1287/opre.50.1.42.17798). Operations Research, 2002, 50(1), 42-47
 
-
-<!--- [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 --->
-
-
 - [AMO] R.K. Ahuja, T.L. Magnanti and J. Orlin. Network Flows: Theory, Algorithms, and Applications. Prentice Hall, 1993
+
+- [TR] Tim Roughgarden. [Beyond Worst-Case Analysis](https://cacm.acm.org/magazines/2019/3/234931-beyond-worst-case-analysis/fulltext). Communications of
+  the ACM, March 2019, Vol. 62 No. 3, Pages 88-96.
+
 
 
 <!-- 
-
+ [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 
 
 - [PRKM] João Pedro Pedroso, Abdur Rais, Mikio Kubo and Masakazu
   Muramatsu. [[https://scipbook.readthedocs.io][/Mathematical Optimization: Solving Problems using SCIP and Python/]].
@@ -171,9 +171,6 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 --> 
 
 
-
-- [TR] Tim Roughgarden. [Beyond Worst-Case Analysis](https://cacm.acm.org/magazines/2019/3/234931-beyond-worst-case-analysis/fulltext). Communications of
-  the ACM, March 2019, Vol. 62 No. 3, Pages 88-96.
 
 
 #### Python
