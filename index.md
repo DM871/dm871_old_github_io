@@ -95,11 +95,11 @@ w3.includeHTML();
 | 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10]                                                                                       | Tuesday,   |
 |             |                                                                        | [LN ch 8]; [Wo ch 8.1-8.6]; [F sc 6.3]                                                             | Test 2     |
 | L           | Branch and Bound                                                       | [Slides][11]; [LN ch 9]; [Wo ch 7]; [F sc 6.4]; [GRB]                                              |            |
-| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56]                                                                                      |            |
+| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];  [Solutions][66]                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices                        | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
 | L           | Network Flows                                                          |                                                                                                    |            |
-| E           | Network Flows                                                          |                                                                                                    |            |
+| E           | Total Unimodular Matrices  and Network Flows                           | [Sheet 7][57]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Flows: Application Examples                                    |                                                                                                    |            |
 | L           | ILP Software                                                           |                                                                                                    |            |
@@ -267,6 +267,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [54]: {{ "/assets/dm545_sheet4.pdf" | absolute_url }}
 [55]: {{ "/assets/dm545_sheet5.pdf" | absolute_url }}
 [56]: {{ "/assets/dm545_sheet6.pdf" | absolute_url }}
+[57]: {{ "/assets/dm545_sheet7.pdf" | absolute_url }}
 
 <!--- Solutions -->
 [60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
@@ -276,6 +277,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [63]: {{ "/assets/Solutions/dm545_sheet3.pdf" | absolute_url }}
 [64]: {{ "/assets/Solutions/dm545_sheet4.pdf" | absolute_url }}
 [65]: {{ "/assets/Solutions/dm545_sheet5.pdf" | absolute_url }}
+[66]: {{ "/assets/Solutions/dm545_sheet6.pdf" | absolute_url }}
 
 
 
