@@ -97,9 +97,9 @@ w3.includeHTML();
 | L           | Branch and Bound                                                       | [Slides][11]; [LN ch 9]; [Wo ch 7]; [F sc 6.4]; [GRB]                                              |            |
 | E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];  [Solutions][66]                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 11        L | Well Solved Problems: Total unimodular matrices                        | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
-| L           | Network Flows                                                          |                                                                                                    |            |
-| E           | Total Unimodular Matrices  and Network Flows                           | [Sheet 7][57]                                                                                      |            |
+| 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
+| L           | Network Flows: Applications                                            | Slides; [AMO-ch1]; [Wi-ch9]                                                                        |            |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Flows: Application Examples                                    |                                                                                                    |            |
 | L           | ILP Software                                                           |                                                                                                    |            |
