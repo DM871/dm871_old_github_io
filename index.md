@@ -98,7 +98,7 @@ w3.includeHTML();
 | E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];  [Solutions][66]                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
-| L           | Network Flows: Applications                                            | Slides; [AMO-ch1]; [Wi-ch9]                                                                        |            |
+| L           | Network Flows: Applications; Network Simplex                           | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Flows: Application Examples                                    |                                                                                                    |            |
@@ -246,6 +246,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [10]: {{ "/assets/dm545_handout_lec10_cut-alg.pdf" | absolute_url }}
 [11]: {{ "/assets/dm545_handout_lec11_bnb.pdf" | absolute_url }}
 [12]: {{ "/assets/dm545_handout_lec12_netflow.pdf" | absolute_url }}
+[13]: {{ "/assets/dm545_handout_lec13_net_simplex.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
