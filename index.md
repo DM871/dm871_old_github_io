@@ -219,7 +219,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 - Ordinary exam: 24h take-home tests:
   - Test 1: week 8, February 23, from 8:00 to 7:59
   - Test 2: week 10, March 9, from 8:00 to 7:59
-  - Test 3: week 13, March 29, from 8:00 to 7:59
+  - Test 3: week 13, March 30, from 8:00 to 7:59
 
 
 - Reexam: Oral in August
