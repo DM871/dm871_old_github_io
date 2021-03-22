@@ -99,11 +99,11 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
-| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][66]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 12        L | Network Simplex; Farkas Lemma                                          | [Slides][14]                                                                                       |            |
+| 12        L | Network Simplex; Farkas Lemma                                          | [Slides][14]; [CL pp 7.1-7.2]; [AMO pp 11.1-11.5]; [F pp 67-68]                                    |            |
 | L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
-| E           | Modeling with Network Flows                                            | [Sheet 8]                                                                                          |            |
+| E           | Modeling with Network Flows                                            | [Sheet 8][58]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 13          |                                                                        |                                                                                                    | Tuesday,   |
 |             |                                                                        |                                                                                                    | Test 3     |
@@ -152,10 +152,11 @@ LP Software                                                            | [SS]; S
 - [TR] Tim Roughgarden. [Beyond Worst-Case Analysis](https://cacm.acm.org/magazines/2019/3/234931-beyond-worst-case-analysis/fulltext). Communications of
   the ACM, March 2019, Vol. 62 No. 3, Pages 88-96.
 
+- [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 
+
 
 
 <!-- 
- [CL] J. Clausen and J. Larsen. [Supplementary notes to networks and integer programming.](./DTUsupplnotes020209.pdf) Lecture Notes, DTU, 2009 
 
 - [PRKM] João Pedro Pedroso, Abdur Rais, Mikio Kubo and Masakazu
   Muramatsu. [[https://scipbook.readthedocs.io][/Mathematical Optimization: Solving Problems using SCIP and Python/]].
@@ -270,6 +271,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [55]: {{ "/assets/dm545_sheet5.pdf" | absolute_url }}
 [56]: {{ "/assets/dm545_sheet6.pdf" | absolute_url }}
 [57]: {{ "/assets/dm545_sheet7.pdf" | absolute_url }}
+[58]: {{ "/assets/dm545_sheet8.pdf" | absolute_url }}
 
 <!--- Solutions -->
 [60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
@@ -280,6 +282,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [64]: {{ "/assets/Solutions/dm545_sheet4.pdf" | absolute_url }}
 [65]: {{ "/assets/Solutions/dm545_sheet5.pdf" | absolute_url }}
 [66]: {{ "/assets/Solutions/dm545_sheet6.pdf" | absolute_url }}
+[66]: {{ "/assets/Solutions/dm545_sheet7.pdf" | absolute_url }}
 
 
 
