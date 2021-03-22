@@ -98,14 +98,14 @@ w3.includeHTML();
 | E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];  [Solutions][66]                                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
-| L           | Network Flows: Applications; Network Simplex                           | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
+| L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 12        L | Network Flows: Application Examples                                    |                                                                                                    |            |
-| L           | ILP Software                                                           |                                                                                                    |            |
-| E           |                                                                        |                                                                                                    |            |
+| 12        L | Network Simplex; Farkas Lemma                                          | [Slides]                                                                                           |            |
+| L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
+| E           | Modeling with Network Flows                                            | [Sheet 8]                                                                                          |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 13          |                                                                        |                                                                                                    | Monday,    |
+| 13          |                                                                        |                                                                                                    | Tuesday,   |
 |             |                                                                        |                                                                                                    | Test 3     |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 
