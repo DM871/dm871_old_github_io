@@ -101,7 +101,7 @@ w3.includeHTML();
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 12        L | Network Simplex; Farkas Lemma                                          | [Slides]                                                                                           |            |
+| 12        L | Network Simplex; Farkas Lemma                                          | [Slides][14]                                                                                       |            |
 | L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
 | E           | Modeling with Network Flows                                            | [Sheet 8]                                                                                          |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
@@ -247,6 +247,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [11]: {{ "/assets/dm545_handout_lec11_bnb.pdf" | absolute_url }}
 [12]: {{ "/assets/dm545_handout_lec12_netflow.pdf" | absolute_url }}
 [13]: {{ "/assets/dm545_handout_lec13_net_simplex.pdf" | absolute_url }}
+[14]: {{ "/assets/dm545_handout_farkas.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
