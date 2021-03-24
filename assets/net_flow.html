@@ -223,7 +223,7 @@ You can use the following approaches:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%pip install -i https://pypi.gurobi.com gurobipy</span>
@@ -236,7 +236,7 @@ You can use the following approaches:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gurobipy</span> <span class="k">as</span> <span class="nn">gp</span>
@@ -260,7 +260,7 @@ You can use the following approaches:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nodes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">]</span>
@@ -316,6 +316,29 @@ You can use the following approaches:</p>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">NameError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-3-99be58e1eb12&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue"></span>
+<span class="ansigreen">      1</span> nodes <span class="ansiblue">=</span> <span class="ansiblue">[</span><span class="ansiblue">&apos;a&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;b&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;c&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;d&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;e&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;f&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;g&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;h&apos;</span><span class="ansiblue">]</span><span class="ansiblue"></span><span class="ansiblue"></span>
+<span class="ansigreen">      2</span> <span class="ansiblue"></span>
+<span class="ansigreen">----&gt; 3</span><span class="ansired"> arcs, capacity = multidict({
+</span><span class="ansigreen">      4</span> <span class="ansiblue">(</span><span class="ansiblue">&apos;a&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;b&apos;</span><span class="ansiblue">)</span><span class="ansiblue">:</span> <span class="ansicyan">15</span><span class="ansiblue">,</span><span class="ansiblue"></span><span class="ansiblue"></span>
+<span class="ansigreen">      5</span> <span class="ansiblue">(</span><span class="ansiblue">&apos;a&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;c&apos;</span><span class="ansiblue">)</span><span class="ansiblue">:</span> <span class="ansicyan">5</span><span class="ansiblue">,</span><span class="ansiblue"></span><span class="ansiblue"></span>
+
+<span class="ansired">NameError</span>: name &apos;multidict&apos; is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1105,37 +1128,16 @@ z
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="err">‘</span><span class="n">partition</span><span class="err">’</span> <span class="n">here</span> <span class="ow">is</span> <span class="n">a</span> <span class="nb">tuple</span> <span class="k">with</span> <span class="n">the</span> <span class="n">two</span> <span class="n">sets</span> <span class="n">of</span> <span class="n">nodes</span> <span class="n">that</span> <span class="n">define</span> <span class="n">the</span> <span class="n">minimum</span> <span class="n">cut</span><span class="o">.</span> 
-<span class="n">You</span> <span class="n">can</span> <span class="n">compute</span> <span class="n">the</span> <span class="n">cut</span> <span class="nb">set</span> <span class="n">of</span> <span class="n">edges</span> <span class="n">that</span> <span class="n">induce</span> <span class="n">the</span> <span class="n">minimum</span> <span class="n">cut</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>‘partition’ here is a tuple with the two sets of nodes that define the minimum cut. 
+You can compute the cut set of edges that induce the minimum cut as follows:</p>
 
 </div>
 </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansicyan">  File </span><span class="ansigreen">&quot;&lt;ipython-input-58-c01e47d80cc8&gt;&quot;</span><span class="ansicyan">, line </span><span class="ansigreen">1</span>
-<span class="ansired">    ‘partition’ here is a tuple with the two sets of nodes that define the minimum cut.</span>
-    ^
-<span class="ansired">SyntaxError</span><span class="ansired">:</span> invalid character &apos;‘&apos; (U+2018)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
