@@ -102,7 +102,7 @@ w3.includeHTML();
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][66]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Simplex; Farkas Lemma                                          | [Slides][14]; [CL pp 7.1-7.2]; [AMO pp 11.1-11.5]; [F pp 67-68]                                    |            |
-| L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
+| L           | Practice Workshop with ILP Software: Application Case                  |   [Unit Commitment](https://github.com/DM871/dm871.github.io/blob/main/notebooks/electrical_power.ipynb); [Factory Planning and Maintenance](https://github.com/DM871/dm871.github.io/blob/main/notebooks/factory_planning_maintenance.ipynb)                                                                                                 |            |
 | E           | Modeling with Network Flows                                            | [Sheet 8][58]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 13          |                                                                        |                                                                                                    | Tuesday,   |
@@ -285,6 +285,10 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [66]: {{ "/assets/Solutions/dm545_sheet7.pdf" | absolute_url }}
 
 
+
+[80] {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/electrical_power.ipynb" | absolute_url }}
+[81] {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/factory_planning_maintenance.ipynb" | absolute_url }}
+    
 
 
 
