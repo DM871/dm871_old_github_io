@@ -191,7 +191,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [T2] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
-- [GRB] Solving MILP Problems in Python with Gurobi [Part 1](./assets/lab_gurobi_1.html); [Part 2](./assets/lab_gurobi_2.html)
+- [GRB] Solving MILP Problems in Python with Gurobi: [Part 1](./assets/lab_gurobi_1.html); [Part 2](./assets/lab_gurobi_2.html)
 
 
 #### Other Tools
