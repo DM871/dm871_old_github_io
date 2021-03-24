@@ -227,7 +227,7 @@ sure you understand the model and read about the Gurobi global function
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[121]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pip</span> install -i https://pypi.gurobi.com gurobipy
@@ -258,7 +258,7 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="prompt input_prompt">In&nbsp;[122]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gurobipy</span> <span class="k">as</span> <span class="nn">gp</span>
@@ -271,7 +271,7 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="prompt input_prompt">In&nbsp;[123]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">categories</span><span class="p">,</span> <span class="n">minNutrition</span><span class="p">,</span> <span class="n">maxNutrition</span><span class="p">,</span> <span class="n">foods</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">nutritionValues</span><span class="p">):</span>
@@ -336,7 +336,7 @@ does:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[124]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">keys</span><span class="p">,</span> <span class="n">dict1</span><span class="p">,</span> <span class="n">dict2</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">multidict</span><span class="p">(</span> <span class="p">{</span>
@@ -367,7 +367,7 @@ does:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="prompt input_prompt">In&nbsp;[125]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">categories</span><span class="p">,</span> <span class="n">minNutrition</span><span class="p">,</span> <span class="n">maxNutrition</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">multidict</span><span class="p">({</span>
@@ -435,7 +435,7 @@ does:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">solve</span><span class="p">(</span><span class="n">categories</span><span class="p">,</span> <span class="n">minNutrition</span><span class="p">,</span> <span class="n">maxNutrition</span><span class="p">,</span> <span class="n">foods</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">nutritionValues</span><span class="p">)</span>
@@ -553,12 +553,12 @@ $$\begin{array}{rllllllllll}
 \mbox{maximize} & 2x_1& +& x_2&\\
     \mbox{subject to} &&&   x_2&  \leq &5&\\
 &                    - x_1& +& x_2 &\leq &1& \\
-&               \multicolumn{3}{r}{x_1, x_2}&\geq &0& \\
+&              x_1, &&x_2&\geq &0& \\
 \end{array}$$$$\begin{array}{rlllllllllll}
 \mbox{maximize}& x_1 &+& x_2&\\
     \mbox{subject to} & 5 x_1& +& 10 x_2&  \leq& 60&\\
 &                    4 x_1 &+ &4 x_2 &\leq &40& \\
-&               \multicolumn{3}{r}{x_1, x_2}&\geq &0& \\
+&               x_1, &&x_2&\geq &0& \\
 \end{array}$$
 </div>
 </div>
@@ -574,7 +574,7 @@ $$\begin{array}{rlllllllllll}
 \mbox{maximize}&&& 4x_2&\\
 \mbox{subject to}&&& 2x_2 &\geq& 0\\
 & -3x_1& +&4 x_2& \geq &1\\
-&       \multicolumn{3}{r}{x_1, x_2}&\geq &0& \\
+&       x_1, &&x_2&\geq &0& \\
 \end{array}$$$$\begin{array}{rlllllllllll}
 \mbox{maximize}\ \ \   10x_1 -57 x_2 -9x_3-24x_4&\\
     \mbox{subject to}\ \   -0.5x_1+5.5x_2+2.5x_3-9x_4 &\leq 0\\
@@ -610,7 +610,7 @@ implementation it may be helpful using the Gurobi tuplelist class
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[127]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
@@ -707,6 +707,29 @@ implementation it may be helpful using the Gurobi tuplelist class
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-127-e8a40636f028&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue"></span>
+<span class="ansigreen">      8</span>     exit<span class="ansiblue">(</span><span class="ansicyan">1</span><span class="ansiblue">)</span><span class="ansiblue"></span><span class="ansiblue"></span>
+<span class="ansigreen">      9</span> <span class="ansiblue"></span>
+<span class="ansigreen">---&gt; 10</span><span class="ansired"> </span>f <span class="ansiblue">=</span> open<span class="ansiblue">(</span>sys<span class="ansiblue">.</span>argv<span class="ansiblue">[</span><span class="ansicyan">1</span><span class="ansiblue">]</span><span class="ansiblue">)</span><span class="ansiblue"></span><span class="ansiblue"></span>
+<span class="ansigreen">     11</span> lines<span class="ansiblue">=</span>f<span class="ansiblue">.</span>readlines<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue">;</span><span class="ansiblue"></span><span class="ansiblue"></span>
+<span class="ansigreen">     12</span> f<span class="ansiblue">.</span>close<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue">;</span><span class="ansiblue"></span><span class="ansiblue"></span>
+
+<span class="ansired">FileNotFoundError</span>: [Errno 2] No such file or directory: &apos;--ip=127.0.0.1&apos;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
