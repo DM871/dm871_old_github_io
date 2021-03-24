@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>electrical_power</title>
+<title>factory_planning_maintenance</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -176,7 +176,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/DM871/dm871.github.io/blob/master/notebooks/electrical_power.ipynb">
+<p><a href="https://colab.research.google.com/github/DM871/dm871.github.io/blob/master/notebooks/factory_planning_maintenance.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a></p>
 
@@ -188,116 +188,61 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Unit-Commitment:-Electrical-Power-Generation">Unit Commitment: Electrical Power Generation<a class="anchor-link" href="#Unit-Commitment:-Electrical-Power-Generation">&#182;</a></h1><h2 id="Objective-and-Prerequisites">Objective and Prerequisites<a class="anchor-link" href="#Objective-and-Prerequisites">&#182;</a></h2><p>Major electric power companies around the world utilize mathematical optimization to manage the flow of energy across their electrical grids. In this example, you’ll discover the power of mathematical optimization in addressing a common energy industry problem: electrical power generation. We’ll show you how to figure out the optimal set of power stations to turn on in order to satisfy anticipated power demand over a 24-hour time horizon.</p>
-<p>This model is example 15 from the fifth edition of Model Building in Mathematical Programming by H. Paul Williams on pages 270 – 271 and 325 – 326.</p>
-<p>This example is at the intermediate level, where we assume that you know Python and the Gurobi Python API and that you have some knowledge of building mathematical optimization models.</p>
-<p>This document is cloned from the <a href="https://www.gurobi.com/resource/modeling-examples-using-the-gurobi-python-api-in-jupyter-notebook/">Gurobi webpage</a> where you can find many other case studies.</p>
-<hr>
-<h2 id="Problem-Description">Problem Description<a class="anchor-link" href="#Problem-Description">&#182;</a></h2><p>In this problem, power generation units are grouped into three distinct types, with different characteristics for each type (power output, cost per megawatt hour, startup cost, etc.).  A unit can be on or off, with a startup cost associated with transitioning from off to on, and power output that can fall anywhere between a specified minimum and maximum value when the unit is on.  A 24-hour time horizon is divided into 5 discrete time periods, each with an expected total power demand.  The model decides which units to turn on, and when, in order to satisfy demand for each time period.  The model also captures a reserve requirement, where the selected power plants must be capable of increasing their output, while still respecting their maximum output, in order to cope with the situation where actual demand exceeds predicted demand.</p>
-<p>A set of generators is available to satisfy power demand for the following day.  Anticipated demand is as follows:</p>
-<table>
-<thead><tr>
-<th>Time Period</th>
-<th>Demand (megawatts)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>12 pm to 6 am</td>
-<td>15000</td>
-</tr>
-<tr>
-<td>6 am to 9 am</td>
-<td>30000</td>
-</tr>
-<tr>
-<td>9 am to 3 pm</td>
-<td>25000</td>
-</tr>
-<tr>
-<td>3 pm to 6 pm</td>
-<td>40000</td>
-</tr>
-<tr>
-<td>6 pm to 12 pm</td>
-<td>27000</td>
-</tr>
-</tbody>
-</table>
-<p>Generators are grouped into three types, with the following minimum and maximum output for each type (when they are on):</p>
-<table>
-<thead><tr>
-<th>Type</th>
-<th>Number available</th>
-<th>Minimum output (MW)</th>
-<th>Maximum output (MW)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>12</td>
-<td>850</td>
-<td>2000</td>
-</tr>
-<tr>
-<td>1</td>
-<td>10</td>
-<td>1250</td>
-<td>1750</td>
-</tr>
-<tr>
-<td>2</td>
-<td>5</td>
-<td>1500</td>
-<td>4000</td>
-</tr>
-</tbody>
-</table>
-<p>There are costs associated with using a generator: a cost per hour when the generator is on (and generating its minimum output), a cost per megawatt hour above its minimum, and a startup cost for turning a generator on:</p>
-<table>
-<thead><tr>
-<th>Type</th>
-<th>Cost per hour (when on)</th>
-<th>Cost per MWh above minimum</th>
-<th>Startup cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>$\$1000$</td>
-<td>$\$2.00$</td>
-<td>$\$2000$</td>
-</tr>
-<tr>
-<td>1</td>
-<td>$\$2600$</td>
-<td>$\$1.30$</td>
-<td>$\$1000$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$\$3000$</td>
-<td>$\$3.00$</td>
-<td>$\$500$</td>
-</tr>
-</tbody>
-</table>
-<p>Generators must meet predicted demand, but they must also have sufficient reserve capacity to be able to cope with the situation where actual demand exceeds predicted demand.  For this model, the set of selected generators must be able to produce as much as 115% of predicted demand.</p>
-<p>Which generators should be committed to meeting anticipated demand in order to minimize total cost?</p>
-<hr>
-<h2 id="Model-Formulation">Model Formulation<a class="anchor-link" href="#Model-Formulation">&#182;</a></h2><h3 id="Sets-and-Indices">Sets and Indices<a class="anchor-link" href="#Sets-and-Indices">&#182;</a></h3><p>$t \in \text{Types}=\{0,1,2\}$: Types of generators.</p>
-<p>$p \in \text{Periods}=\{0,1,2,3,4\}$: Time periods.</p>
-<h3 id="Parameters">Parameters<a class="anchor-link" href="#Parameters">&#182;</a></h3><p>$\text{period_hours}_p \in \mathbb{N}^+$: Number of hours in each time period.</p>
-<p>$\text{generators}_t \in \mathbb{N}^+$: Number of generators of type $t$.</p>
-<p>$\text{demand}_p \in \mathbb{R}^+$: Total power demand for time period $p$.</p>
-<p>$\text{start0} \in \mathbb{N}^+$: Number of generators that are on at the beginning of the time horizon (and available in time period 0 without paying a startup cost).</p>
-<p>$\text{min_output}_t \in \mathbb{R}^+$: Minimum output for generator type $t$ (when on).</p>
-<p>$\text{max_output}_t \in \mathbb{R}^+$: Maximum output for generator type $t$.</p>
-<p>$\text{base_cost}_t \in \mathbb{R}^+$: Minimum operating cost (per hour) for a generator of type $t$.</p>
-<p>$\text{per_mw_cost}_t \in \mathbb{R}^+$: Cost to generate one additional MW (per hour) for a generator of type $t$.</p>
-<p>$\text{startup_cost}_t \in \mathbb{R}^+$: Startup cost for generator of type $t$.</p>
+<h1 id="Factory-Planning-and-Machine-Maintenance">Factory Planning and Machine Maintenance<a class="anchor-link" href="#Factory-Planning-and-Machine-Maintenance">&#182;</a></h1><p>A firm makes seven products $1,\ldots,7$ on the following machines: 4
+grinders, 2 vertical drills, 3 horizontal drills, 1 borer, and 1 planer.</p>
+<p>Each product yields a certain contribution to the profit (defined as
+selling price minus cost of raw materials expressed in Euro/unit). These
+quantities (in Euro/unit) together with the production times
+(hours/unit) required on each process are given below.</p>
+
+<pre><code> product     1      2      3      4      5      6     7
+ profit      10     6      8      4      11     9     3
+ grinding    0.5    0.7    0      0      0.3    0.2   0.5
+ vdrill      0.1    0.2    0      0.3    0      0.6   0
+ hdrill      0.2    0      0.8    0      0      0     0.6
+ boring      0.05   0.03   0      0.07   0.1    0     0.08
+ planning    0      0      0.01   0      0.05   0     0.05
+
+
+</code></pre>
+<p>In the first month (January) and the five subsequent months certain
+machines will be down for maintenance. These machines will be:</p>
+
+<pre><code> January   1 grinder
+ February  2 hdrill
+ March     1 borer
+ April     1 vdrill
+ May       1 grinder
+ May       1 vdrill
+ June      1 planer
+ June      1 hdrill
+
+
+</code></pre>
+<p>There are marketing limitations on each product in each month. That is,
+in each month the amount sold for each product cannot exceed these
+values:</p>
+
+<pre><code> product    1     2      3     4     5      6     7
+ January    500   1000   300   300   800    200   100
+ February   600   500    200   0     400    300   150
+ March      300   600    0     0     500    400   100
+ April      200   300    400   500   200    0     100
+ May        0     100    500   100   1000   300   0
+ June       500   500    100   300   1100   500   60
+
+
+</code></pre>
+<p>It is possible to store products in a warehouse. The capacity of the
+storage is 100 units per product type per month. The cost is 0.5 Euro
+per unit of product per months. There are no stocks in the first month
+but it is desired to have a stock of 50 of each product type at the end
+of June.</p>
+<p>The factory works 6 days a week with two shifts of 8 hours each day. (It
+can be assumed that each month consists of 24 working days.)</p>
+<p>The factory wants to determine a production plan, that is, the quantity
+to produce, sell and store in each month for each product, that
+maximizes the total profit.</p>
 
 </div>
 </div>
@@ -307,7 +252,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Decision-Variables">Decision Variables<a class="anchor-link" href="#Decision-Variables">&#182;</a></h3><p>...</p>
+<h2 id="Task-1">Task 1<a class="anchor-link" href="#Task-1">&#182;</a></h2><p>Model the factory planning problem for the month of January as an LP
+problem.</p>
 
 </div>
 </div>
@@ -317,31 +263,13 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Objective-Function">Objective Function<a class="anchor-link" href="#Objective-Function">&#182;</a></h3><ul>
-<li><strong>Cost</strong>: Minimize the cost (in USD) to satisfy the predicted electricity demand.</li>
-</ul>
-<p>...</p>
-<h3 id="Constraints">Constraints<a class="anchor-link" href="#Constraints">&#182;</a></h3><ul>
-<li><strong>Available generators</strong>: Number of generators used must be less than or equal to the number available.</li>
-</ul>
-<p>...</p>
+<h2 id="Task-2">Task 2<a class="anchor-link" href="#Task-2">&#182;</a></h2><p>Model the multi-period (from January to June) factory planning problem
+as an LP problem. Use mathematical notation and indicate in general
+terms how many variables and how many constraints your model has.</p>
 <ul>
-<li><strong>Demand</strong>: Total power generated across all generator types must meet anticipated demand for each time period $p$.</li>
+<li>How many variables and how many constraints do we have in the  model in terms of number of products and planning months?</li>
+<li>What is the structure of the matrix generated for the model?</li>
 </ul>
-<p>...</p>
-<ul>
-<li><strong>Min/max generation</strong>: Power generation must respect generator min/max values.</li>
-</ul>
-<p>...</p>
-<ul>
-<li><strong>Reserve</strong>: Selected generators must be able to satisfy demand that is as much as 15% above the prediction.</li>
-</ul>
-<p>...</p>
-<ul>
-<li><strong>Startup</strong>: Establish relationship between number of active generators and number of startups (use $start0$ for period before the time horizon starts)</li>
-</ul>
-<p>...</p>
-<hr>
 
 </div>
 </div>
@@ -351,7 +279,100 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Implementation">Python Implementation<a class="anchor-link" href="#Python-Implementation">&#182;</a></h2><p>We import the Gurobi Python Module and other Python libraries. With Gurobi 9.1.1, a pip installation of the product will automatically include a size-limited (2000 variables, 2000 linear constraints, and 200 quadratic constraints) license that should work in a Docker container, which is used by Google Colab.</p>
+<h2 id="Task-3">Task 3<a class="anchor-link" href="#Task-3">&#182;</a></h2><p>Implement the single-period model (Task 1) in a SpreadSheet.
+Implement the multi-period model (Task 2) in Python and Gurobi. Solve
+the problem on the data given.</p>
+<ul>
+<li>Report and comment relevant information from the execution of the solver.</li>
+<li>Report the production plan, that is, how much of each product should the factory produce in the months.</li>
+<li>Indicate which resource capacity could be convinient to increase in some months and the impact that such increase would have on the total profit.</li>
+<li>Indicate which change in price could make appealing producing a product that is not in production in a certain month. </li>
+</ul>
+<p>Here are the data of the problem:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
+
+<span class="k">class</span> <span class="nc">Data</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">products</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">];</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">machines</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;grinder&quot;</span><span class="p">,</span><span class="s2">&quot;vdrill&quot;</span><span class="p">,</span><span class="s2">&quot;hdrill&quot;</span><span class="p">,</span><span class="s2">&quot;borer&quot;</span><span class="p">,</span><span class="s2">&quot;planer&quot;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;january&quot;</span><span class="p">,</span><span class="s2">&quot;february&quot;</span><span class="p">,</span><span class="s2">&quot;march&quot;</span><span class="p">,</span><span class="s2">&quot;april&quot;</span><span class="p">,</span><span class="s2">&quot;may&quot;</span><span class="p">,</span><span class="s2">&quot;june&quot;</span><span class="p">]</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">profits</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+        
+        <span class="n">tmp</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;grinder&#39;</span>     <span class="p">:[</span><span class="mf">0.5</span><span class="p">,</span>    <span class="mf">0.7</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>      <span class="mi">0</span><span class="p">,</span>      <span class="mf">0.3</span><span class="p">,</span>    <span class="mf">0.2</span><span class="p">,</span>   <span class="mf">0.5</span><span class="p">],</span>  
+        <span class="s1">&#39;vdrill&#39;</span>      <span class="p">:[</span><span class="mf">0.1</span> <span class="p">,</span>   <span class="mf">0.2</span> <span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mf">0.3</span> <span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mf">0.6</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>    
+        <span class="s1">&#39;hdrill&#39;</span>      <span class="p">:[</span><span class="mf">0.2</span> <span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mf">0.8</span> <span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mi">0</span>  <span class="p">,</span>   <span class="mf">0.6</span><span class="p">],</span>  
+        <span class="s1">&#39;borer&#39;</span>      <span class="p">:[</span><span class="mf">0.05</span><span class="p">,</span>   <span class="mf">0.03</span><span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mf">0.07</span><span class="p">,</span>   <span class="mf">0.1</span> <span class="p">,</span>   <span class="mi">0</span>  <span class="p">,</span>   <span class="mf">0.08</span><span class="p">],</span>
+        <span class="s1">&#39;planer&#39;</span>    <span class="p">:[</span><span class="mi">0</span>   <span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mf">0.01</span><span class="p">,</span>   <span class="mi">0</span>   <span class="p">,</span>   <span class="mf">0.05</span><span class="p">,</span>   <span class="mi">0</span>  <span class="p">,</span>   <span class="mf">0.05</span><span class="p">]</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">coeff</span><span class="o">=</span><span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">machines</span><span class="p">:</span>
+            <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">products</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">coeff</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">[</span><span class="n">m</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> 
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;grinder&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span><span class="s2">&quot;vdrill&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="s2">&quot;hdrill&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;borer&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;planer&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+        
+        <span class="n">tmp</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;grinder&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;january&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;may&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)],</span>
+        <span class="s2">&quot;hdrill&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;february&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),(</span><span class="s2">&quot;june&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)],</span> 
+        <span class="s2">&quot;borer&quot;</span><span class="p">:</span>  <span class="p">[(</span><span class="s2">&quot;march&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)],</span>
+        <span class="s2">&quot;vdrill&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;april&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),(</span><span class="s2">&quot;may&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)],</span>
+        <span class="s2">&quot;planer&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;june&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span> 
+        <span class="p">}</span>
+
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">maintainance</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">machines</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">months</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">maintainance</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">if</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">tmp</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">tmp</span><span class="p">[</span><span class="n">m</span><span class="p">]:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">maintainance</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">=</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        
+        <span class="n">tmp</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;january&quot;</span><span class="p">:</span>    <span class="p">[</span><span class="mi">500</span>   <span class="p">,</span><span class="mi">1000</span>   <span class="p">,</span><span class="mi">300</span>   <span class="p">,</span><span class="mi">300</span>   <span class="p">,</span><span class="mi">800</span>    <span class="p">,</span><span class="mi">200</span>   <span class="p">,</span><span class="mi">100</span><span class="p">],</span>
+        <span class="s2">&quot;february&quot;</span><span class="p">:</span>   <span class="p">[</span><span class="mi">600</span>   <span class="p">,</span><span class="mi">500</span>    <span class="p">,</span><span class="mi">200</span>   <span class="p">,</span><span class="mi">0</span>     <span class="p">,</span><span class="mi">400</span>    <span class="p">,</span><span class="mi">300</span>   <span class="p">,</span><span class="mi">150</span><span class="p">],</span>
+        <span class="s2">&quot;march&quot;</span><span class="p">:</span>      <span class="p">[</span><span class="mi">300</span>   <span class="p">,</span><span class="mi">600</span>    <span class="p">,</span><span class="mi">0</span>     <span class="p">,</span><span class="mi">0</span>     <span class="p">,</span><span class="mi">500</span>    <span class="p">,</span><span class="mi">400</span>   <span class="p">,</span><span class="mi">100</span><span class="p">],</span>
+        <span class="s2">&quot;april&quot;</span><span class="p">:</span>      <span class="p">[</span><span class="mi">200</span>   <span class="p">,</span><span class="mi">300</span>    <span class="p">,</span><span class="mi">400</span>   <span class="p">,</span><span class="mi">500</span>   <span class="p">,</span><span class="mi">200</span>    <span class="p">,</span><span class="mi">0</span>     <span class="p">,</span><span class="mi">100</span><span class="p">],</span>   
+        <span class="s2">&quot;may&quot;</span><span class="p">:</span>        <span class="p">[</span><span class="mi">0</span>     <span class="p">,</span><span class="mi">100</span>    <span class="p">,</span><span class="mi">500</span>   <span class="p">,</span><span class="mi">100</span>   <span class="p">,</span><span class="mi">1000</span>   <span class="p">,</span><span class="mi">300</span>   <span class="p">,</span><span class="mi">0</span>  <span class="p">],</span>
+        <span class="s2">&quot;june&quot;</span><span class="p">:</span>       <span class="p">[</span><span class="mi">500</span>   <span class="p">,</span><span class="mi">500</span>    <span class="p">,</span><span class="mi">100</span>   <span class="p">,</span><span class="mi">300</span>   <span class="p">,</span><span class="mi">1100</span>   <span class="p">,</span><span class="mi">500</span>   <span class="p">,</span><span class="mi">60</span> <span class="p">]</span>
+        <span class="p">}</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">market_limits</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">months</span><span class="p">:</span>
+            <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">products</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">market_limits</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">[</span><span class="n">m</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> 
+    
+    <span class="k">def</span> <span class="nf">printData</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Months:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">months</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Products:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">products</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Machines:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">machines</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coefficients: &quot;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">coeff</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Market_limits:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">market_limits</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maitainance:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maintainance</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We import the Gurobi Python Module and other Python libraries. With Gurobi 9.1.1, a pip installation of the product will automatically include a size-limited (2000 variables, 2000 linear constraints, and 200 quadratic constraints) license that should work in a Docker container, which is used by Google Colab.</p>
 
 </div>
 </div>
@@ -392,11 +413,7 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="kn">import</span> <span class="nn">gurobipy</span> <span class="k">as</span> <span class="nn">gp</span>
-<span class="kn">from</span> <span class="nn">gurobipy</span> <span class="k">import</span> <span class="n">GRB</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gurobipy</span> <span class="k">as</span> <span class="nn">gp</span>
 </pre></div>
 
 </div>
@@ -409,378 +426,37 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Input-Data">Input Data<a class="anchor-link" href="#Input-Data">&#182;</a></h2><p>We define all the input data of the model.</p>
+<h2 id="Task-4">Task 4<a class="anchor-link" href="#Task-4">&#182;</a></h2><p>Here, instead of stipulating when each machine is down for maintenance, it is
+desired to find the best month for each machine to be down.</p>
+<p>Each machine must be down for maintenance in one month of the six
+apart from the grinding machines, only two of which need to be down in any
+six months.</p>
+<p>Extend the model that correctly addressed tasks 2 and 3 to allow it to make these extra decisions.</p>
+<ul>
+<li><p>How many variables did you need to add? What is the domain of these
+variables?</p>
+</li>
+<li><p>Has the matrix of the problem a similar structure to the one
+of the point above?</p>
+</li>
+<li><p>Is the solution from Task 3 a valid solution to this problem?
+What information can it bear in this new case?</p>
+</li>
+<li><p>Implement and solve the model in Python and Gurobi. After how many
+nodes in the branch and bound tree is the optimal solution found? And
+after how many is it proven optimal?</p>
+</li>
+<li><p>How much worth is the extra flexibility of choosing when to place
+downtimes?</p>
+</li>
+<li><p>The column ``LP iter'' indicates the number of simplex iterations for solving the LP problem. Why is this number increasing through the search?</p>
+</li>
+<li><p>Can you devise another model and compare them computationally?  Which is best? Why?</p>
+</li>
+</ul>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Parameters</span>
-
-<span class="n">ntypes</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">nperiods</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">maxstart0</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="n">generators</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">period_hours</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
-<span class="n">demand</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15000</span><span class="p">,</span> <span class="mi">30000</span><span class="p">,</span> <span class="mi">25000</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">27000</span><span class="p">]</span>
-<span class="n">min_load</span> <span class="o">=</span> <span class="p">[</span><span class="mi">850</span><span class="p">,</span> <span class="mi">1250</span><span class="p">,</span> <span class="mi">1500</span><span class="p">]</span>
-<span class="n">max_load</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">1750</span><span class="p">,</span> <span class="mi">4000</span><span class="p">]</span>
-<span class="n">base_cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2600</span><span class="p">,</span> <span class="mi">3000</span><span class="p">]</span>
-<span class="n">per_mw_cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">startup_cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-Deployment">Model Deployment<a class="anchor-link" href="#Model-Deployment">&#182;</a></h2><p>We create a model and the variables.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Next we insert the constraints:</p>
-<p>The number of active generators can't exceed the number of generators.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Generator count</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Total power output for a generator type depends on the number of generators of that type that are active.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Respect minimum and maximum output per generator type</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Total output for each time period must meet predicted demand.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Meet demand</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Selected generators must be able to cope with an excess of demand.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Provide sufficient reserve capacity</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Connect the decision variables that capture active generators with the startups.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Startup constraint</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Objective: minimize total cost.  Cost consists of three components: the cost for running active generation units, the cost to generate power beyond the minimum for each unit, and the cost to start up generation units.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Objective: minimize total cost</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, we start the optimization and Gurobi finds the optimal solution.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;junk.lp&#39;</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">optimize</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-11-e04621004afb&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue"></span>
-<span class="ansigreen">----&gt; 1</span><span class="ansired"> </span>model<span class="ansiblue">.</span>write<span class="ansiblue">(</span><span class="ansiblue">&apos;junk.lp&apos;</span><span class="ansiblue">)</span><span class="ansiblue"></span><span class="ansiblue"></span>
-<span class="ansigreen">      2</span> model<span class="ansiblue">.</span>optimize<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span><span class="ansiblue"></span>
-
-<span class="ansired">NameError</span>: name &apos;model&apos; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><p>The anticipated demand for electricity over the 24-hour time window can be met for a total cost of $\$1,002,540$. The detailed plan for each time period is as follows.</p>
-<h3 id="Unit-Commitments">Unit Commitments<a class="anchor-link" href="#Unit-Commitments">&#182;</a></h3><p>The following table shows the number of generators of each type that are active in each time period in the optimal solution:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The following shows the number of generators of each type that must be started in each time period to achieve this plan (recall that the model assumes that 5 are available at the beginning of the time horizon):</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">startups</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">nperiods</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="n">rows</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Task-2">Task 2<a class="anchor-link" href="#Task-2">&#182;</a></h3><p>Two hydroelectric generators are also available, each with a fixed power output (when on):</p>
-<table>
-<thead><tr>
-<th>Hydro plant</th>
-<th>Output (MW)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>900</td>
-</tr>
-<tr>
-<td>B</td>
-<td>1400</td>
-</tr>
-</tbody>
-</table>
-<p>The costs associated with using a hydro plant are slightly different.  There's an hourly cost, but it is much smaller than the hourly cost of a thermal generator.  The real cost for a hydroelectric plant comes from depletion of the water in the reservoir, which happens at different rates for the two units.  The reservoir must be replenished before the end of the time horizon by pumping water into it, which consumes electricity.  A hydroelectric plant also has a startup cost.</p>
-<table>
-<thead><tr>
-<th>Hydro plant</th>
-<th>Cost per hour (when on)</th>
-<th>Startup cost</th>
-<th>Reservoir depth reduction (m/hr)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>\$90</td>
-<td>\$1500</td>
-<td>0.31</td>
-</tr>
-<tr>
-<td>B</td>
-<td>\$150</td>
-<td>\$1200</td>
-<td>0.47</td>
-</tr>
-</tbody>
-</table>
-<p>Pumping water into the reservoir consumes electricity at a rate of 3000 MWh of electricity per meter of height.  The height of the reservoir at the end of the time horizon must be equal to the height at the beginning.</p>
-<p>Generators must meet predicted demand, but they must also have sufficient reserve capacity to be able to cope with the situation where actual demand exceeds predicted demand.  For this model, the set of selected thermal generators plus the set of hydro generators must be able to produce as much as 115% of predicted demand.</p>
-<p>Which generators should be committed to meet anticipated demand in order to minimize total cost?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="References">References<a class="anchor-link" href="#References">&#182;</a></h2><p>H. Paul Williams, Model Building in Mathematical Programming, fifth edition.</p>
-<p>Copyright © 2020 Gurobi Optimization, LLC</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>

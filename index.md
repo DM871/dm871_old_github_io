@@ -286,8 +286,11 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
-[80]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/electrical_power.ipynb" | absolute_url }}
-[81]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/factory_planning_maintenance.ipynb" | absolute_url }}
+[82]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/electrical_power.ipynb" | absolute_url }}
+[83]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/factory_planning_maintenance.ipynb" | absolute_url }}
+
+[80]: {{ "/assets/electrical_power.html" | absolute_url }}
+[81]: {{ "/assets/factory_planning_maintenance.html" | absolute_url }}
     
 
 
