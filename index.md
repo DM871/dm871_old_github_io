@@ -99,10 +99,10 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
-| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][66]                                                                     |            |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][67]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Simplex; Farkas Lemma                                          | [Slides][14]; [CL pp 7.1-7.2]; [AMO pp 11.1-11.5]; [F pp 67-68]                                    |            |
-| L           | Practice Workshop with ILP Software: Application Case                  | [Unit Commitment][80]; [Factory Planning and Maintenance][81]                                      |            |
+| L           | Practice Workshop with ILP Software: Application Case                  | [Unit Commitment][80] ([Sol][69]); [Factory Planning and Maintenance][81] ([Sol][699])             |            |
 | E           | Modeling with Network Flows                                            | [Sheet 8][58]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 13          |                                                                        |                                                                                                    | Tuesday,   |
@@ -282,8 +282,10 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [64]: {{ "/assets/Solutions/dm545_sheet4.pdf" | absolute_url }}
 [65]: {{ "/assets/Solutions/dm545_sheet5.pdf" | absolute_url }}
 [66]: {{ "/assets/Solutions/dm545_sheet6.pdf" | absolute_url }}
-[66]: {{ "/assets/Solutions/dm545_sheet7.pdf" | absolute_url }}
-
+[67]: {{ "/assets/Solutions/dm545_sheet7.pdf" | absolute_url }}
+[68]: {{ "/assets/Solutions/dm545_sheet8.pdf" | absolute_url }}
+[69]: {{ "https://www.gurobi.com/resource/electrical-power-generation-jupyter-notebook-i-and-ii/" | absolute_url }}
+[699]: {{ "https://www.gurobi.com/resource/factory-planning-i-and-ii/" | absolute_url }}
 
 
 [82]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/electrical_power.ipynb" | absolute_url }}
