@@ -223,7 +223,7 @@ You can use the following approaches:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%pip install -i https://pypi.gurobi.com gurobipy</span>
@@ -236,7 +236,7 @@ You can use the following approaches:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gurobipy</span> <span class="k">as</span> <span class="nn">gp</span>
@@ -260,12 +260,12 @@ You can use the following approaches:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nodes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">]</span>
 
-<span class="n">arcs</span><span class="p">,</span> <span class="n">capacity</span> <span class="o">=</span> <span class="n">multidict</span><span class="p">({</span>
+<span class="n">arcs</span><span class="p">,</span> <span class="n">capacity</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">multidict</span><span class="p">({</span>
 <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">):</span> <span class="mi">15</span><span class="p">,</span>
 <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">):</span> <span class="mi">5</span><span class="p">,</span>
 <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">):</span> <span class="mi">10</span><span class="p">,</span>
@@ -283,7 +283,8 @@ You can use the following approaches:</p>
 <span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">):</span> <span class="mi">10</span><span class="p">,</span>
 <span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">):</span> <span class="n">GRB</span><span class="o">.</span><span class="n">INFINITY</span><span class="p">})</span>
 
-<span class="n">arcs</span> <span class="o">=</span> <span class="n">tuplelist</span><span class="p">(</span><span class="n">arcs</span><span class="p">)</span>
+<span class="c1"># Needed for the alternative formulation</span>
+<span class="c1">#acs = gp.tuplist(arcs)</span>
 
 <span class="n">cost</span> <span class="o">=</span> <span class="p">{</span>
 <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">):</span> <span class="mi">0</span><span class="p">,</span>
@@ -319,44 +320,21 @@ You can use the following approaches:</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-3-99be58e1eb12&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue"></span>
-<span class="ansigreen">      1</span> nodes <span class="ansiblue">=</span> <span class="ansiblue">[</span><span class="ansiblue">&apos;a&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;b&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;c&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;d&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;e&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;f&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;g&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;h&apos;</span><span class="ansiblue">]</span><span class="ansiblue"></span><span class="ansiblue"></span>
-<span class="ansigreen">      2</span> <span class="ansiblue"></span>
-<span class="ansigreen">----&gt; 3</span><span class="ansired"> arcs, capacity = multidict({
-</span><span class="ansigreen">      4</span> <span class="ansiblue">(</span><span class="ansiblue">&apos;a&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;b&apos;</span><span class="ansiblue">)</span><span class="ansiblue">:</span> <span class="ansicyan">15</span><span class="ansiblue">,</span><span class="ansiblue"></span><span class="ansiblue"></span>
-<span class="ansigreen">      5</span> <span class="ansiblue">(</span><span class="ansiblue">&apos;a&apos;</span><span class="ansiblue">,</span><span class="ansiblue">&apos;c&apos;</span><span class="ansiblue">)</span><span class="ansiblue">:</span> <span class="ansicyan">5</span><span class="ansiblue">,</span><span class="ansiblue"></span><span class="ansiblue"></span>
-
-<span class="ansired">NameError</span>: name &apos;multidict&apos; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create optimization model</span>
 <span class="n">m</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="s1">&#39;netflow&#39;</span><span class="p">)</span>
 
 <span class="c1"># Create variables</span>
-<span class="n">flow</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="n">arcs</span><span class="p">:</span>
-    <span class="n">flow</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">addVar</span><span class="p">(</span><span class="n">obj</span><span class="o">=</span><span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">],</span><span class="n">vtype</span><span class="o">=</span><span class="n">GRB</span><span class="o">.</span><span class="n">CONTINUOUS</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">f</span><span class="s1">&#39;flow(</span><span class="si">{i}</span><span class="s1">,</span><span class="si">{j}</span><span class="s1">)&#39;</span><span class="p">)</span>
+<span class="n">flow</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">addVars</span><span class="p">(</span><span class="n">arcs</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="n">cost</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;flow&quot;</span><span class="p">)</span>
 <span class="c1"># Alternative way</span>
-<span class="c1"># flow = m.addVars(arcs, obj=cost, name=&quot;flow&quot;)</span>
+<span class="c1">#flow = {}</span>
+<span class="c1">#for i,j in arcs:</span>
+<span class="c1">#    flow[i,j] = m.addVar(obj=cost[i,j],vtype=GRB.CONTINUOUS, name=f&#39;flow({i},{j})&#39;)</span>
 
 <span class="n">m</span><span class="o">.</span><span class="n">modelSense</span><span class="o">=</span><span class="n">GRB</span><span class="o">.</span><span class="n">MINIMIZE</span>
 <span class="c1"># Arc capacity constraints</span>
@@ -371,11 +349,9 @@ You can use the following approaches:</p>
 <span class="c1"># Flow conservation constraints</span>
 <span class="n">dual_pi</span><span class="o">=</span><span class="p">{}</span>
 <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>
-    <span class="n">dual_pi</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">addConstr</span><span class="p">(</span><span class="n">gp</span><span class="o">.</span><span class="n">quicksum</span><span class="p">(</span><span class="n">flow</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="n">arcs</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">,</span><span class="n">j</span><span class="p">))</span> <span class="o">-</span> <span class="n">gp</span><span class="o">.</span><span class="n">quicksum</span><span class="p">(</span><span class="n">flow</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">k</span> <span class="ow">in</span> <span class="n">arcs</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">))</span><span class="o">==</span><span class="n">inflow</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">f</span><span class="s1">&#39;node(</span><span class="si">{j}</span><span class="s1">)&#39;</span><span class="p">)</span>
-
-<span class="c1"># Equivalent version</span>
-<span class="c1">#m.addConstrs(  (flow.sum(&#39;*&#39;, j) + inflow[j] == flow.sum(j, &#39;*&#39;) for j in nodes), &quot;node&quot;)</span>
-
+    <span class="n">dual_pi</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">addConstr</span><span class="p">(</span><span class="n">flow</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">,</span><span class="n">j</span><span class="p">)</span> <span class="o">-</span> <span class="n">flow</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span><span class="o">==</span><span class="n">inflow</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">f</span><span class="s1">&#39;node(</span><span class="si">{j}</span><span class="s1">)&#39;</span><span class="p">)</span>
+    <span class="c1"># Equivalent version with arcs as Gurobi type tuplelist </span>
+    <span class="c1"># dual_pi[j] = m.addConstr(gp.quicksum(flow[i,j] for i,j in arcs.select(&#39;*&#39;,j)) - gp.quicksum(flow[j,k] for j,k in arcs.select(j,&#39;*&#39;))==inflow[j], f&#39;node({j})&#39;)</span>
 
 <span class="c1"># Compute optimal solution</span>
 <span class="n">m</span><span class="o">.</span><span class="n">optimize</span><span class="p">()</span>
@@ -415,14 +391,14 @@ Coefficient statistics:
   Bounds range     [0e+00, 0e+00]
   RHS range        [4e+00, 3e+01]
 Presolve removed 19 rows and 4 columns
-Presolve time: 0.05s
+Presolve time: 0.01s
 Presolved: 5 rows, 12 columns, 19 nonzeros
 
 Iteration    Objective       Primal Inf.    Dual Inf.      Time
        0   -3.0000000e+01   1.050000e+01   0.000000e+00      0s
        5   -2.8000000e+01   0.000000e+00   0.000000e+00      0s
 
-Solved in 5 iterations and 0.07 seconds
+Solved in 5 iterations and 0.03 seconds
 Optimal objective -2.800000000e+01
 Warning: constraint name &quot;cap[a, b]&quot; has a space
 
@@ -484,7 +460,7 @@ h a 0.0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
@@ -525,7 +501,7 @@ h a 0.0
   <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2021-03-24T11:58:01.337589</dc:date>
+    <dc:date>2021-03-29T00:52:56.630400</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -549,10 +525,10 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 289.695432 233.20211 
+    <path clip-path="url(#pd4637e8c7b)" d="M 289.695432 233.20211 
 Q 342.208512 194.759867 393.819452 156.978036 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 389.410478 157.727002 
+    <path clip-path="url(#pd4637e8c7b)" d="M 389.410478 157.727002 
 L 393.819452 156.978036 
 L 391.77324 160.954595 
 L 389.410478 157.727002 
@@ -560,10 +536,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_3">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 282.704132 229.659768 
+    <path clip-path="url(#pd4637e8c7b)" d="M 282.704132 229.659768 
 Q 282.704132 210.704524 282.704132 192.867315 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 280.704132 196.867315 
+    <path clip-path="url(#pd4637e8c7b)" d="M 280.704132 196.867315 
 L 282.704132 192.867315 
 L 284.704132 196.867315 
 L 280.704132 196.867315 
@@ -571,10 +547,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_4">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 274.339995 240.56126 
+    <path clip-path="url(#pd4637e8c7b)" d="M 274.339995 240.56126 
 Q 223.199839 254.264223 173.139621 267.677818 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 177.520963 268.574394 
+    <path clip-path="url(#pd4637e8c7b)" d="M 177.520963 268.574394 
 L 173.139621 267.677818 
 L 176.485686 264.710691 
 L 177.520963 268.574394 
@@ -582,10 +558,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_5">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 395.587292 145.074895 
+    <path clip-path="url(#pd4637e8c7b)" d="M 395.587292 145.074895 
 Q 342.206524 91.694127 289.616326 39.103929 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 291.030539 43.34657 
+    <path clip-path="url(#pd4637e8c7b)" d="M 291.030539 43.34657 
 L 289.616326 39.103929 
 L 293.858966 40.518142 
 L 291.030539 43.34657 
@@ -593,10 +569,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_6">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 291.068269 180.847005 
+    <path clip-path="url(#pd4637e8c7b)" d="M 291.068269 180.847005 
 Q 342.208425 167.144041 392.268643 153.730446 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 387.887302 152.833871 
+    <path clip-path="url(#pd4637e8c7b)" d="M 387.887302 152.833871 
 L 392.268643 153.730446 
 L 388.922578 156.697574 
 L 387.887302 152.833871 
@@ -604,10 +580,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_7">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 275.073628 178.998993 
+    <path clip-path="url(#pd4637e8c7b)" d="M 275.073628 178.998993 
 Q 223.200102 151.200055 172.312026 123.929217 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 174.89298 127.581432 
+    <path clip-path="url(#pd4637e8c7b)" d="M 174.89298 127.581432 
 L 172.312026 123.929217 
 L 176.78237 124.055782 
 L 174.89298 127.581432 
@@ -615,10 +591,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_8">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 170.687167 265.090278 
+    <path clip-path="url(#pd4637e8c7b)" d="M 170.687167 265.090278 
 Q 223.200247 226.648035 274.811188 188.866205 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 270.402214 189.61517 
+    <path clip-path="url(#pd4637e8c7b)" d="M 270.402214 189.61517 
 L 274.811188 188.866205 
 L 272.764976 192.842763 
 L 270.402214 189.61517 
@@ -626,10 +602,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_9">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 157.570763 264.08316 
+    <path clip-path="url(#pd4637e8c7b)" d="M 157.570763 264.08316 
 Q 104.189995 210.702392 51.599797 158.112193 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 53.01401 162.354834 
+    <path clip-path="url(#pd4637e8c7b)" d="M 53.01401 162.354834 
 L 51.599797 158.112193 
 L 55.842437 159.526407 
 L 53.01401 162.354834 
@@ -637,10 +613,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_10">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 163.695868 261.546271 
+    <path clip-path="url(#pd4637e8c7b)" d="M 163.695868 261.546271 
 Q 163.695868 194.75885 163.695868 129.089464 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 161.695868 133.089464 
+    <path clip-path="url(#pd4637e8c7b)" d="M 161.695868 133.089464 
 L 163.695868 129.089464 
 L 165.695868 133.089464 
 L 161.695868 133.089464 
@@ -648,10 +624,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_11">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 282.704132 40.853729 
+    <path clip-path="url(#pd4637e8c7b)" d="M 282.704132 40.853729 
 Q 282.704132 107.64115 282.704132 173.310536 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 284.704132 169.310536 
+    <path clip-path="url(#pd4637e8c7b)" d="M 284.704132 169.310536 
 L 282.704132 173.310536 
 L 280.704132 169.310536 
 L 284.704132 169.310536 
@@ -659,10 +635,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_12">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 274.339995 34.432899 
+    <path clip-path="url(#pd4637e8c7b)" d="M 274.339995 34.432899 
 Q 223.199839 48.135863 173.139621 61.549458 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 177.520963 62.446033 
+    <path clip-path="url(#pd4637e8c7b)" d="M 177.520963 62.446033 
 L 173.139621 61.549458 
 L 176.485686 58.58233 
 L 177.520963 62.446033 
@@ -670,10 +646,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_13">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 170.687167 114.193845 
+    <path clip-path="url(#pd4637e8c7b)" d="M 170.687167 114.193845 
 Q 223.200247 75.751602 274.811188 37.969772 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 270.402214 38.718737 
+    <path clip-path="url(#pd4637e8c7b)" d="M 270.402214 38.718737 
 L 274.811188 37.969772 
 L 272.764976 41.94633 
 L 270.402214 38.718737 
@@ -681,10 +657,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_14">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 163.695868 110.651503 
+    <path clip-path="url(#pd4637e8c7b)" d="M 163.695868 110.651503 
 Q 163.695868 91.69626 163.695868 73.85905 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 161.695868 77.85905 
+    <path clip-path="url(#pd4637e8c7b)" d="M 161.695868 77.85905 
 L 163.695868 73.85905 
 L 165.695868 77.85905 
 L 161.695868 77.85905 
@@ -692,10 +668,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_15">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 53.05174 148.958836 
+    <path clip-path="url(#pd4637e8c7b)" d="M 53.05174 148.958836 
 Q 104.191896 135.255873 154.252114 121.842278 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 149.870773 120.945702 
+    <path clip-path="url(#pd4637e8c7b)" d="M 149.870773 120.945702 
 L 154.252114 121.842278 
 L 150.906049 124.809406 
 L 149.870773 120.945702 
@@ -703,10 +679,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_16">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 51.678903 146.082013 
+    <path clip-path="url(#pd4637e8c7b)" d="M 51.678903 146.082013 
 Q 104.191983 107.639771 155.802923 69.85794 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 151.393949 70.606906 
+    <path clip-path="url(#pd4637e8c7b)" d="M 151.393949 70.606906 
 L 155.802923 69.85794 
 L 153.756711 73.834499 
 L 151.393949 70.606906 
@@ -714,10 +690,10 @@ z
 " style="stroke:#000000;stroke-linecap:round;"/>
    </g>
    <g id="patch_17">
-    <path clip-path="url(#p7fe0c6df5a)" d="M 168.578882 71.229133 
+    <path clip-path="url(#pd4637e8c7b)" d="M 168.578882 71.229133 
 Q 223.199175 151.198792 277.188886 230.245215 
 " style="fill:none;stroke:#000000;stroke-linecap:round;"/>
-    <path clip-path="url(#p7fe0c6df5a)" d="M 276.584382 225.814123 
+    <path clip-path="url(#pd4637e8c7b)" d="M 276.584382 225.814123 
 L 277.188886 230.245215 
 L 273.28131 228.070163 
 L 276.584382 225.814123 
@@ -736,21 +712,21 @@ C -7.747755 -4.499694 -8.660254 -2.296726 -8.660254 0
 C -8.660254 2.296726 -7.747755 4.499694 -6.123724 6.123724 
 C -4.499694 7.747755 -2.296726 8.660254 0 8.660254 
 z
-" id="m1acdb46535" style="stroke:#1f78b4;"/>
+" id="m713f4fea20" style="stroke:#1f78b4;"/>
     </defs>
-    <g clip-path="url(#p7fe0c6df5a)">
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="282.704132" xlink:href="#m1acdb46535" y="238.320096"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="401.712397" xlink:href="#m1acdb46535" y="151.2"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="282.704132" xlink:href="#m1acdb46535" y="183.088168"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="163.695868" xlink:href="#m1acdb46535" y="270.208264"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="282.704132" xlink:href="#m1acdb46535" y="32.191736"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="163.695868" xlink:href="#m1acdb46535" y="119.311832"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="44.687603" xlink:href="#m1acdb46535" y="151.2"/>
-     <use style="fill:#1f78b4;stroke:#1f78b4;" x="163.695868" xlink:href="#m1acdb46535" y="64.079904"/>
+    <g clip-path="url(#pd4637e8c7b)">
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="282.704132" xlink:href="#m713f4fea20" y="238.320096"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="401.712397" xlink:href="#m713f4fea20" y="151.2"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="282.704132" xlink:href="#m713f4fea20" y="183.088168"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="163.695868" xlink:href="#m713f4fea20" y="270.208264"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="282.704132" xlink:href="#m713f4fea20" y="32.191736"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="163.695868" xlink:href="#m713f4fea20" y="119.311832"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="44.687603" xlink:href="#m713f4fea20" y="151.2"/>
+     <use style="fill:#1f78b4;stroke:#1f78b4;" x="163.695868" xlink:href="#m713f4fea20" y="64.079904"/>
     </g>
    </g>
    <g id="text_1">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- a -->
      <g transform="translate(279.027257 241.631346)scale(0.12 -0.12)">
       <defs>
@@ -792,7 +768,7 @@ z
     </g>
    </g>
    <g id="text_2">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- b -->
      <g transform="translate(397.903334 154.51125)scale(0.12 -0.12)">
       <defs>
@@ -827,7 +803,7 @@ z
     </g>
    </g>
    <g id="text_3">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- c -->
      <g transform="translate(279.40507 186.399418)scale(0.12 -0.12)">
       <defs>
@@ -858,7 +834,7 @@ z
     </g>
    </g>
    <g id="text_4">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- d -->
      <g transform="translate(159.886805 273.519514)scale(0.12 -0.12)">
       <defs>
@@ -894,7 +870,7 @@ z
     </g>
    </g>
    <g id="text_5">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- e -->
      <g transform="translate(279.012257 35.502986)scale(0.12 -0.12)">
       <defs>
@@ -928,7 +904,7 @@ z
     </g>
    </g>
    <g id="text_6">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- f -->
      <g transform="translate(161.58368 122.623082)scale(0.12 -0.12)">
       <defs>
@@ -958,7 +934,7 @@ z
     </g>
    </g>
    <g id="text_7">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- g -->
      <g transform="translate(40.878541 154.51125)scale(0.12 -0.12)">
       <defs>
@@ -1001,7 +977,7 @@ z
     </g>
    </g>
    <g id="text_8">
-    <g clip-path="url(#p7fe0c6df5a)">
+    <g clip-path="url(#pd4637e8c7b)">
      <!-- h -->
      <g transform="translate(159.893368 67.391154)scale(0.12 -0.12)">
       <defs>
@@ -1032,7 +1008,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p7fe0c6df5a">
+  <clipPath id="pd4637e8c7b">
    <rect height="288" width="432" x="7.2" y="7.2"/>
   </clipPath>
  </defs>
@@ -1067,7 +1043,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">networkx.algorithms.flow</span> <span class="k">import</span> <span class="n">shortest_augmenting_path</span>
@@ -1116,7 +1092,7 @@ z
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cut_value</span><span class="p">,</span> <span class="n">partition</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">minimum_cut</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;h&quot;</span><span class="p">)</span>
@@ -1141,7 +1117,7 @@ You can compute the cut set of edges that induce the minimum cut as follows:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cutset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
@@ -1166,7 +1142,7 @@ You can compute the cut set of edges that induce the minimum cut as follows:</p>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
