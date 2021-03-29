@@ -1,0 +1,62 @@
+1;;"A Metalloenzyme Model";3;5;alle
+2;;"AEP (auditory-evoked potentials) - En metode til undersøgelser af hørrelse hos marsvin";3;5;alle
+3;;"Artbestemmelse med proteomics";3;4;alle
+4;a;"Assessment of Cell Death during Tumour Progression";3;5;alle
+4;b;"Assessment of Cell Death during Tumour Progression";3;5;alle
+5;;"At finde nye lægemidler med Click Chemistry";3;5;alle
+6;;"Brætspillet HEX";3;5;alle
+7;;"Building Wireless Sensor Network Applications";3;5;alle
+8;;"Cadmiums optagelse og vandring i marine organismer";4;5;alle
+9;;"Catching the Light";3;3;alle
+10;;"Design og implentation af elevator software";3;5;alle
+11;;"Diabetes og genregulering";3;4;alle
+12;a;"Dyrelyde som metode til at bestemme artdiversiteti naturen";3;5;alle
+12;b;"Dyrelyde som metode til at bestemme artdiversiteti naturen";3;5;alle
+13;;"Elektronen: Den nyttige elementarpartikel";3;5;alle
+14;;"Fremstilling af lysopfangende nanostrukturer (protoceller)";3;5;alle
+15;;"Fysiologiske undersøgelser af marsvin";3;5;alle
+16;a;"Gensekventering og mikrobiel evolution";3;4;alle
+16;b;"Gensekventering og mikrobiel evolution";3;4;alle
+17;a;"Identificere bakterier i naturlige miljøer med molekylær økologiske teknikker";3;5;alle
+17;b;"Identificere bakterier i naturlige miljøer med molekylær økologiske teknikker";3;5;alle
+18;;"Identifikation af proteolytiske enzymer fra kødædende planter";3;5;alle
+19;;"Importance of Protein Tyrosine Phosphorylation for in Cancer Cell Signaling";3;4;alle
+20;;"Infektionsbiologi: er enterotoksinet vigtigt for patogene colibakteriers infektion i C. elegans nemametoder?";3;5;alle
+21;;"Infektionssygdomme forårsaget af bakterier";3;5;alle
+22;;"Ion- og vandtransport proteiner i fiskegællen";3;4;alle
+23;;"Kan fluoxetin og sulpirid anvendes af en ammende kvinde";3;5;laege
+24;;"Kan ingefær anvendes til at behandle kvalme og opkastning i graviditeten";3;5;laege
+25;;"Kan kolesterolsænkende behandling give hukommelsesbesvær";3;5;laege
+26;;"Kaos";3;5;alle
+27;;"Konstruktion og anvendelse af en ionkilde til ekstraktiv elektrosprayionisering (EESI)";3;5;alle
+28;;"Kosmologi";3;5;alle
+29;;"Kunstig næse til sporing af sprængstof";3;5;alle
+30;;"Magnetiske nanpartikler i molekylær diagnostik";3;5;alle
+31;a;"Matematikken bag 3D-grafik i computerspil";3;5;alle
+31;b;"Matematikken bag 3D-grafik i computerspil";3;5;alle
+32;;"Microwave-Controlled Synthesis of Quantum Dots";3;5;alle
+33;a;"Mindste kvadraters metode";3;4;alle
+33;b;"Mindste kvadraters metode";3;4;alle
+34;;"Molekylær sygdomsgenetik: Hvad er (u)normalt?";3;5;alle
+35;;"Oprensning af miljøskadelige ioner";3;4;alle
+36;;"Oprensning af svovlkornsproteiner";3;3;alle
+37;;"Organisering af kolloide partikler";3;4;alle
+38;;"Overtrækning af tabletter";3;5;alle
+39;;"Plantemedicin mod fedme og kræft";3;5;alle
+40;;"Process Engineering in Aquaculture Research";3;5;alle
+41;;"Profiling the Sperm Lipidome";3;4;alle
+42;a;"Programmering af algoritmer i hardware";3;5;alle
+42;b;"Programmering af algoritmer i hardware";3;5;alle
+43;;"Q.E.D. - Det matematiske bevis";3;4;alle
+44;;"Resistance to Antibiotics by RNA Methylation";3;5;alle
+45;;"Sceening for AMPK stimulerende stoffer";3;4;alle
+46;;"Self-Cleaning Surfaces - the Lotus Effect";3;3;alle
+47;a;"Simulation with Cellular Automata";3;5;alle
+47;b;"Simulation with Cellular Automata";3;5;alle
+48;;"Smart Climbing - Gecko Have it in their Feet";3;3;alle
+49;;"Udivkling og anvendelse af nanobiosensorer til måling af metabolitter i celler";3;5;alle
+50;a;"Vand: Biologiens ideelle opløsningsmiddel";3;4;alle
+50;b;"Vand: Biologiens ideelle opløsningsmiddel";3;4;alle
+50;c;"Vand: Biologiens ideelle opløsningsmiddel";3;4;alle
+51;;"Watching Proteins on the Move";3;6;alle
+52;;"Øges risikoen for blødning ved samtidig behandling med warfarin og paracetamol?";3;5;laege
