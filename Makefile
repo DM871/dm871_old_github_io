@@ -29,7 +29,7 @@ build:
 	bundle exec jekyll build
 
 publish:
-	bundle exec jekyll build --trace -d /home/marco/public_html/DM871
+	bundle exec jekyll build --trace -d /home/marco/public_html/Teaching/AY2020-2021/DM871
 	# cp -fr _site/* /home/marco/WWWpublic/Blog
 
 clean:
