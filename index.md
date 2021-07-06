@@ -223,7 +223,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
   - Test 3: week 13, March 30, from 8:00 to 7:59
 
 
-- Reexam: Oral in August
+- Reexam: two days take-home exam in August
 
 
 - [Preparation for the take-home assignments](./notes/editing.html)
