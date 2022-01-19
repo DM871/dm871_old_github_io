@@ -2,7 +2,7 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: "DM545/DM871 (F21) -- Linear and Integer Programming"
+title: "DM545/DM871 (F22) -- Linear and Integer Programming"
 layout: default
 excerpt: "Main Page"
 sitemap: false
@@ -20,15 +20,13 @@ permalink: /
 
 - Teacher: [Marco Chiarandini](https://imada.sdu.dk/~marco)
 
-- Instructor: Peter Bjørn  <!-- pbjoe17@student.sdu.dk -->
-
-
+- Instructor: [http://www.aritradutta.com/](http://www.aritradutta.com/)
 
 ### Schedule
 
 
 <p>
-<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f21">MitSDU</a>
+<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f22">MitSDU</a>
 </p>
 
 <button onclick="myFunction('h2')" class="w3-btn w3-cell
@@ -126,8 +124,6 @@ LP Software                                                            | [SS]; S
 - [F] M. Fischetti, [Introduction to Mathematical Optimization](https://www.amazon.com/Introduction-Mathematical-Optimization-Matteo-Fischetti/dp/1692792024)
   Independently published, 2019
 
-- [MG] J. Matousek and B. Gartner. [Understanding and Using Linear Programming](http://dx.doi.org/10.1007/978-3-540-30717-4). Springer Berlin Heidelberg, 2007
-
 - [Wo]  L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 1998.
 
 - [LN] M. Chiarandini. [Lecture Notes][20]. 2021.
@@ -135,7 +131,7 @@ LP Software                                                            | [SS]; S
 
 #### Other References
 
-
+- [MG] J. Matousek and B. Gartner. [Understanding and Using Linear Programming](http://dx.doi.org/10.1007/978-3-540-30717-4). Springer Berlin Heidelberg, 2007
 
 - [Wi] H.P. Williams. [Model building in mathematical programming](http://site.ebrary.com.proxy1-bib.sdu.dk:2048/lib/sdub/detail.action?docID=10657847). John Wiley & Sons, Chichester, Fifth Edition, 2013
 
