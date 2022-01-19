@@ -16,9 +16,11 @@ permalink: /
 
 - [Official course description](https://odin.sdu.dk/sitecore/index.php?a=searchfagbesk&internkode=dm871&lang=en)
 
-- [ItsLearning](https://sdu.itslearning.com/ContentArea/ContentArea.aspx?LocationID=9174&LocationType=1)
+- [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=17727)
+
 
 - Teacher: [Marco Chiarandini](https://imada.sdu.dk/~marco)
+
 
 - Instructor: [Aritra Dutta](http://www.aritradutta.com/)
 
@@ -213,14 +215,16 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 ### Assessment
 
 
-- Ordinary exam: 24h take-home tests:
+- Ordinary exam: 12h take-home tests
+
+<!--
   - Test 1: week 8, February 23, from 8:00 to 7:59
   - Test 2: week 10, March 9, from 8:00 to 7:59
   - Test 3: week 13, March 30, from 8:00 to 7:59
 
-
 - Reexam: two days take-home exam in August
 
+-->
 
 - [Preparation for the take-home assignments](./notes/editing.html)
 
