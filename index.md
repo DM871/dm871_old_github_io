@@ -186,7 +186,9 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [T1] [Tutorial on Jupyter (aka IPython) notebooks, `numpy` and Linear Algebra](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial.ipynb)
 
-- [T2] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
+- [T2] [Exercise sheet on Python for Linear Algebra][500]
+
+- [T3] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
 - [GRB] Solving MILP Problems in Python with Gurobi: [Part 1](./assets/lab_gurobi_1.html); [Part 2](./assets/lab_gurobi_2.html)
 
@@ -262,6 +264,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 <!--- Sheets -->
 [50]: {{ "/assets/dm545_sheet0.pdf" | absolute_url }}
+[500]: {{ "/assets/dm545_sheet0_python.pdf" | absolute_url }}
 [51]: {{ "/assets/dm545_sheet1.pdf" | absolute_url }}
 [52]: {{ "/assets/dm545_sheet2.pdf" | absolute_url }}
 [522]: {{ "/assets/dm545_sheet2_plus.pdf" | absolute_url }}
