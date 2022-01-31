@@ -27,7 +27,9 @@ permalink: /
 
 
 <p>
-<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f22">MitSDU</a>
+MitSDU
+<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f22">DM545</a>
+<a href="https://mitsdu.sdu.dk/skema/activity/N340030101/f22">DM871</a>
 </p>
 
 <button onclick="myFunction('h2')" class="w3-btn w3-cell
@@ -57,7 +59,7 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+---------------------------------+-------|
 | E           | Exercises: Linear Algebra Review                                       | [Sheet 0][50]; [T0]; [T1]; [T3] |       |
 |-------------+------------------------------------------------------------------------+---------------------------------+-------|
-| 5 L         | Course Organization                                                    |                                 |       |
+| 5 L         | Course Organization                                                    |  [Slides][1]; [LN pp 1-7][21]  |       |
 |             | Introductory elements: Linear Programming, Notation                    |                                 |       |
 |             | Resource allocation in factory planning.                               |                                 |       |
 |             | Linear programming problems and geometrical interpretation.            |                                 |       |
