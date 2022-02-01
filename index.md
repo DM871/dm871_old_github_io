@@ -59,14 +59,14 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+---------------------------------+-------|
 | E           | Exercises: Linear Algebra Review                                       | [Sheet 0][50]; [T0]; [T1]; [T3] |       |
 |-------------+------------------------------------------------------------------------+---------------------------------+-------|
-| 5 L         | Course Organization                                                    |  [Slides][1]; [LN pp 1-7][21]  |       |
+| 5 L         | Course Organization                                                    | [Slides][1]; [LN pp 1-7][21]    |       |
 |             | Introductory elements: Linear Programming, Notation                    |                                 |       |
 |             | Resource allocation in factory planning.                               |                                 |       |
 |             | Linear programming problems and geometrical interpretation.            |                                 |       |
 | L           | Diet problem                                                           |                                 |       |
 |             | Fourier & Moutzkin elimination                                         |                                 |       |
 |             | Notation: polyhedral analysis                                          |                                 |       |
-| E           | Exercises: LP Modeling                                                 |                                 |       |
+| E           | Exercises: LP Modeling                                                 | [Sheet 1][51];                  |       |
 |-------------+------------------------------------------------------------------------+---------------------------------+-------|
 | 6        L  | Simplex Method                                                         |                                 |       |
 |             | Geometry and Algebra of Linear programming theory, Fundamental theorem |                                 |       |
