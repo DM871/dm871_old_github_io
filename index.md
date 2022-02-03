@@ -111,7 +111,6 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+-------------------------------------+-------|
 
 
-
 <!---
 ,[./Training/dm545_sheet0.pdf][Sheet0 with python]]; intro to Python: [[./Slides/dm545_python1.pdf][1] [[./Slides/dm545_python2.pdf][2] |            |
 LP Software                                                            | [SS]; Section Python below                                                                         |            |
