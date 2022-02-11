@@ -14,7 +14,7 @@ categories: notes
 This is one of a series of three tests that constitute the exam of
 the course. The test consists of a number of tasks divided into
 subtasks. The answers must be collected in a unique PDF document and are
-to be handed in electronically in ItsLearning (to be confirmed)
+to be handed in electronically in ItsLearning.
 
 -   **The test is individual. You are not allowed to collaborate by any
     means with other persons**.
@@ -25,13 +25,13 @@ to be handed in electronically in ItsLearning (to be confirmed)
     you follow the instructions below.
 
 -   Keep your answers anonymous but make sure that you specify your
-    exam number. Use the Latex and Word templates provided in the
+    exam number (Not CPRN!). Use the Latex and Word templates provided in the
     external web page to see where to specify the exam number.
 
 -   In the PDF document make sure that you start a new page for every
     SUBTASK and you write a section title that includes the word
-    “Subtask”, specifying which SUBTASK you are addressing. Use the
-    Latex and Word templates provided in the external web page.
+    “Subtask”, specifying which SUBTASK you are addressing. See the
+    examples in the Latex and Word templates provided in the external web page.
 
 -   You can write your answers in Danish or in English.
 
@@ -51,7 +51,7 @@ to be handed in electronically in ItsLearning (to be confirmed)
     is in progress. It is your own responsibility in case of
     technical issues.
 
-- Tools and tutorials for types setting your answers are available
+- Tools and tutorials for typesetting your answers are available
     from the Public Web Page:\ Assessment $\rightarrow$ Preparation
     for the take-home assignments. (This page below.)
 
@@ -85,8 +85,10 @@ to be handed in electronically in ItsLearning (to be confirmed)
 
     -   [Latex symbol
         classifier](http://detexify.kirelabs.org/classify.html)
-    -   [Syntax Highlight Code In Word
+<!--
+-   [Syntax Highlight Code In Word
         Documents](http://www.planetb.ca/syntax-highlight-word)
+-->
 
 -   [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb) (modules "numpy" and "fractions")
 
