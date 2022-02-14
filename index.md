@@ -73,14 +73,14 @@ w3.includeHTML();
 |             | Simplex method, tableaux and dictionaries                              | [Python T2]                                                                    |            |
 | L           | Exception Handling, degeneracies, pivot rules,                         | [Slides][4]; [LN][24]; [Compedium][522]                                        |            |
 |             | Initialization                                                         | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]; [TR]                                     |            |
-| E           | Exercises: Simplex Method                                              | [Sheet 2][52]                                                                  |            |
+| E           | Exercises: Simplex Method                                              | [Sheet 2][52]; [Solutions][62]; [Notebook][622]                                |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 7    L      | Duality Derivation:                                                    | [Slides][5]; [LN][25]; [F sec 5.1-5.5]                                         |            |
 |             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                               |            |
 |             | Duality Theory:                                                        |                                                                                |            |
 |             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                |            |
 | L           | Duality Applications: Dual Simplex, Sensitivity Analysis               |                                                                                |            |
-| E           | Exercises: Duality                                                     |                                                                                |            |
+| E           | Exercises: Duality                                                     | [Sheet 3][53];                                                                 |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 8      L    | Sensitivity Analysis                                                   |                                                                                |            |
 |             | Revised Simplex Method                                                 |                                                                                |            |
