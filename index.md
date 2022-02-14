@@ -75,8 +75,8 @@ w3.includeHTML();
 |             | Initialization                                                         | [F pp 48-58]; [MG ch 5]; [HL sc 4.5]; [TR]                                     |            |
 | E           | Exercises: Simplex Method                                              | [Sheet 2][52]                                                                  |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
-| 7    L      | Duality Derivation:                                                    |                                                                                |            |
-|             | Bounding and multipliers approach                                      |                                                                                |            |
+| 7    L      | Duality Derivation:                                                    | [Slides][5]; [LN][25]; [F sec 5.1-5.5]                                         |            |
+|             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                               |            |
 |             | Duality Theory:                                                        |                                                                                |            |
 |             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                |            |
 | L           | Duality Applications: Dual Simplex, Sensitivity Analysis               |                                                                                |            |
