@@ -80,7 +80,7 @@ w3.includeHTML();
 |             | Duality Theory:                                                        |                                                                                |            |
 |             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                |            |
 | L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | [Slides][6]; [LN][25]; [F sec 5.6-5.8]; [Va sc 7.1]; [CL ch 2]                 |            |
-| E           | Exercises: Duality                                                     | [Sheet 3][53];                                                                 |            |
+| E           | Exercises: Duality                                                     | [Sheet 3][53]; [Solutions][63]                                                 |            |
 |-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------|
 | 8      L    | Sensitivity Analysis                                                   |                                                                                |            |
 |             | Revised Simplex Method                                                 |                                                                                |            |
