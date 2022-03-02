@@ -125,9 +125,9 @@ LP Software                                                            | [SS]; S
 - [F] M. Fischetti, [Introduction to Mathematical Optimization](https://www.amazon.com/Introduction-Mathematical-Optimization-Matteo-Fischetti/dp/1692792024)
   Independently published, 2019
 
-- [Wo]  L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 1998.
+- [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 1998.
 
-- [LN] M. Chiarandini. [Lecture Notes][20]. 2021.
+- [LN] M. Chiarandini. [Lecture Notes][20]. 2022.
 
 
 #### Other References
