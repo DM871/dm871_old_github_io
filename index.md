@@ -94,11 +94,11 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10];  [LN ch 6]; [Wo ch 8.1-8.6]; [F sc 6.3]                                              | Monday,    |
 | L           | Branch and Bound                                                       | [Slides][11]; [LN ch 7]; [Wo ch 7]; [F sc 6.4]; [GRB]                                              | Test 2     |
-| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56]                                                                                      |            |
+| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56]; [Solutions][66]                                                                     |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         |                                                                                                    |            |
-| L           | Network Flows: Applications; Duality in Network Flows                  |                                                                                                    |            |
-| E           | Total Unimodular Matrices and Network Flows                            |                                                                                                    |            |
+| 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
+| L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Simplex; Farkas Lemma                                          |                                                                                                    |            |
 | L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
@@ -217,16 +217,15 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 ### Assessment
 
 
-- Ordinary exam: 12h take-home tests
+- Ordinary exam: 24h take-home tests
 
-<!--
+
   - Test 1: week 8, February 23, from 8:00 to 7:59
-  - Test 2: week 10, March 9, from 8:00 to 7:59
-  - Test 3: week 13, March 30, from 8:00 to 7:59
+  - Test 2: week 10, March 7, from 8:00 to 7:59
+  - Test 3: week 13, March 28, from 8:00 to 7:59
 
 - Reexam: two days take-home exam in August
 
--->
 
 - [Preparation for the take-home assignments](./notes/editing.html)
 
