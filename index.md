@@ -98,11 +98,11 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
-| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |            |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; Solutions; [ILP in e-sheets][99]                                                    |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 12        L | Network Simplex; Farkas Lemma                                          |                                                                                                    |            |
 | L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
-| E           | Modeling with Network Flows                                            |                                                                                                    |            |
+| E           | Modeling with Network Flows                                            | [Sheet 8][58]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 13          |                                                                        |                                                                                                    | Monday,    |
 |             |                                                                        |                                                                                                    | Test 3     |
@@ -297,7 +297,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [81]: {{ "/assets/factory_planning_maintenance.html" | absolute_url }}
     
 
-
+[99]: {{ "https://docs.google.com/spreadsheets/d/1yWCM0e-qjshjL0IHv8KbbM2csX-Lvi-Wl3nM707f6ac/edit?usp=sharing" }}
 
 
 <!---
