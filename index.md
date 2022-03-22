@@ -100,7 +100,7 @@ w3.includeHTML();
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][67]; [ILP in e-sheets][99]                                              |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 12        L | Practice Workshop with ILP Software: Application Case                  | [GRB]                                                                                              |            |
+| 12        L | Practice Workshop with ILP Software: Application Case                  | [GRB]: [Part 1][101]; [Part 2][102]                                                                |            |
 | L           | Farkas Lemma                                                           | [Slides][14]; [CL pp 7.1-7.2]; [AMO pp 11.1-11.5]; [F pp 67-68]                                    |            |
 | E           | Modeling with Network Flows                                            | [Sheet 8][58]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
@@ -191,7 +191,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [T3] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
-- [GRB] Solving MILP Problems in Python with Gurobi: [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb); [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb)
+- [GRB] Solving MILP Problems in Python with Gurobi: [Part 1][101]; [Part 2][102]
 
 
 #### Other Tools
@@ -298,6 +298,11 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
     
 
 [99]: {{ "https://docs.google.com/spreadsheets/d/1yWCM0e-qjshjL0IHv8KbbM2csX-Lvi-Wl3nM707f6ac/edit?usp=sharing" }}
+
+
+
+[101]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb" }}
+[102]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb" }}
 
 
 <!---
