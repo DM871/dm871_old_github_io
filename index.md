@@ -98,10 +98,10 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |            |
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |            |
-| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][67]; [ILP in e-sheets][99]                                                    |            |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]; [Solutions][67]; [ILP in e-sheets][99]                                              |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
-| 12        L | Network Simplex; Farkas Lemma                                          |                                                                                                    |            |
-| L           | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |            |
+| 12        L | Practice Workshop with ILP Software: Application Case                  | [GRB]                                                                                              |            |
+| L           | Farkas Lemma                                                           | [Slides][14]; [CL pp 7.1-7.2]; [AMO pp 11.1-11.5]; [F pp 67-68]                                    |            |
 | E           | Modeling with Network Flows                                            | [Sheet 8][58]                                                                                      |            |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------|
 | 13          |                                                                        |                                                                                                    | Monday,    |
@@ -191,7 +191,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [T3] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
-- [GRB] Solving MILP Problems in Python with Gurobi: [Part 1](./assets/lab_gurobi_1.html); [Part 2](./assets/lab_gurobi_2.html)
+- [GRB] Solving MILP Problems in Python with Gurobi: [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb); [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb)
 
 
 #### Other Tools
