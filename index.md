@@ -224,7 +224,8 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
   - Test 2: week 10, March 7, from 8:00 to 7:59
   - Test 3: week 13, March 28, from 8:00 to 7:59
 
-- Reexam: two days take-home exam in August
+- Reexam: two days take-home exam, starting at 8:00 of Monday, August
+  15, 2022, and terminating at 23:59 of Tuesday, August 16, 2022.
 
 
 - [Preparation for the take-home assignments](./notes/editing.html)
