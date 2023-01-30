@@ -21,7 +21,7 @@ permalink: /
 
 - Teacher: [Marco Chiarandini](https://imada.sdu.dk/~marco)
 
-- Instructor: [Frederik Lund Andersen](email:freda20@student.sdu.dk), [Juraj Marcibál](email:jmarc22@student.sdu.dk)
+- Instructor: [Frederik Lund Andersen](mailto:freda20@student.sdu.dk), [Juraj Marcibál](mailto:jmarc22@student.sdu.dk)
 
 
 ### Schedule
@@ -78,7 +78,7 @@ w3.includeHTML();
 | L           | Diet problem                                                           |                                       |       |
 |             | Fourier & Moutzkin elimination                                         |                                       |       |
 |             | Notation: polyhedral analysis                                          |                                       |       |
-| E           | Exercises: LP Modeling                                                 |  [Sheet 1][51];                                     |       |
+| E           | Exercises: LP Modeling                                                 | [Sheet 1][51]                         |       |
 |-------------+------------------------------------------------------------------------+---------------------------------------+-------|
 | 6        L  | Simplex Method                                                         |                                       |       |
 |             | Geometry and Algebra of Linear programming theory, Fundamental theorem |                                       |       |
@@ -137,7 +137,7 @@ LP Software                                                            | [SS]; S
 - [F] M. Fischetti, [Introduction to Mathematical Optimization](https://www.amazon.com/Introduction-Mathematical-Optimization-Matteo-Fischetti/dp/1692792024)
   Independently published, 2019
 
-- [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 1998.
+- [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021
 
 - [LN] M. Chiarandini. [Lecture Notes][20]. 2022.
 
