@@ -30,7 +30,7 @@ permalink: /
 <p>
 MitSDU
 <a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f23">DM545</a>
-<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f23">DM871</a>
+<a href="https://mitsdu.sdu.dk/skema/activity/N340030101/f23">DM871</a>
 </p>
 
 
