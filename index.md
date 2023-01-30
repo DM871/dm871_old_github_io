@@ -33,8 +33,18 @@ MitSDU
 <a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f23">DM871</a>
 </p>
 
-<button onclick="myFunction('h2')" class="w3-btn w3-cell w3-left-align">Schedule for DM545, section M1 <i class="fa fa-caret-down"></i></button>
-<div id="m1" class="w3-container w3-hide">
+
+- <a href="https://skemaplan.sdu.dk/">Alternative view</a>
+
+<!-- https://vis.aida.imada.sdu.dk/public/e22udgave3/DM561 -->
+
+
+- Semester overview: <button onclick="myFunction('m1')" class="w3-btn w3-cell
+w3-left-align"> section M1 <i class="fa fa-caret-down"></i></button>
+<button onclick="myFunction('h1')" class="w3-btn w3-cell
+w3-left-align"> section H1 <i class="fa fa-caret-down"></i></button>
+
+<div id="h1" class="w3-container w3-hide">
 <div class="w3-responsive">
 <div w3-include-html="./assets/dm545_m1.html"></div>
 <script>
@@ -42,15 +52,13 @@ w3.includeHTML();
 </script>
 </div>
 </div>
-</div>
-<button onclick="myFunction('h2')" class="w3-btn w3-cell w3-left-align">Schedule for DM871, section H1 <i class="fa fa-caret-down"></i></button>
-<div id="h1" class="w3-container w3-hide">
+
+<div id="m1" class="w3-container w3-hide">
 <div class="w3-responsive">
 <div w3-include-html="./assets/dm871_h1.html"></div>
 <script>
 w3.includeHTML();
 </script>
-</div>
 </div>
 </div>
 
@@ -223,15 +231,13 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 ### Assessment
 
 
-- Ordinary exam: 24h take-home tests
+- Ordinary exam: two, 24h, take-home tests
+
+  - Test 1
+  - Test 2
 
 
-  - Test 1: week 8, February 23, from 8:00 to 7:59
-  - Test 2: week 10, March 7, from 8:00 to 7:59
-  - Test 3: week 13, March 28, from 8:00 to 7:59
-
-- Reexam: two days take-home exam, starting at 8:00 of Monday, August
-  15, 2022, and terminating at 23:59 of Tuesday, August 16, 2022.
+- Reexam: two days take-home exam in August.
 
 
 - [Preparation for the take-home assignments](./notes/editing.html)
