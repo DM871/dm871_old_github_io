@@ -144,6 +144,10 @@ LP Software                                                            | [SS]; S
 
 #### Other References
 
+- [CLRS] Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and
+  Clifford Stein, Introduction to Algorithms, Chapter 29. Fourth edition, 2009, The
+  MIT Press
+
 - [MG] J. Matousek and B. Gartner. [Understanding and Using Linear Programming](http://dx.doi.org/10.1007/978-3-540-30717-4). Springer Berlin Heidelberg, 2007
 
 - [Da] G.B. Dantzig.  [Linear Programming](http://dx.doi.org/10.1287/opre.50.1.42.17798). Operations Research, 2002, 50(1), 42-47
