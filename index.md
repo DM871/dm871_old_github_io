@@ -75,9 +75,9 @@ w3.includeHTML();
 |             | Introductory elements: Linear Programming, Notation                    |                                       |       |
 |             | Resource allocation in factory planning.                               | [HL ch 1,2,3]                         |       |
 |             | Linear programming problems and geometrical interpretation.            | [MG ch 1,2, Appendix]                 |       |
-| L           | Diet problem                                                           |                                       |       |
-|             | Fourier & Moutzkin elimination                                         |                                       |       |
-|             | Notation: polyhedral analysis                                          |                                       |       |
+| L           | Diet problem                                                           | [Slides][2]; [LN pp 7-21][22]         |       |
+|             | Fourier & Moutzkin elimination                                         | [Da]; [FM]                            |       |
+|             | Notation: polyhedral analysis                                          | [F ch 1, 2]; [MG ch 4]; [HL sc 5.1]   |       |
 | E           | Exercises: LP Modeling                                                 | [Sheet 1][51]                         |       |
 |-------------+------------------------------------------------------------------------+---------------------------------------+-------|
 | 6        L  | Simplex Method                                                         |                                       |       |
