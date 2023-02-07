@@ -292,16 +292,16 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [58]: {{ "/assets/dm545_sheet8.pdf" | absolute_url }}
 
 <!--- Solutions -->
-[60]: {{ "/assets/Solutions/dm545_sheet0.pdf" | absolute_url }}
-[61]: {{ "/assets/Solutions/dm545_sheet1.pdf" | absolute_url }}
-[62]: {{ "/assets/Solutions/dm545_sheet2.pdf" | absolute_url }}
+[60]: {{ "/assets/Solutions/dm545_sheet0_sol.pdf" | absolute_url }}
+[61]: {{ "/assets/Solutions/dm545_sheet1_sol.pdf" | absolute_url }}
+[62]: {{ "/assets/Solutions/dm545_sheet2_sol.pdf" | absolute_url }}
 [622]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/sheet2.ipynb" | absolute_url }}
-[63]: {{ "/assets/Solutions/dm545_sheet3.pdf" | absolute_url }}
-[64]: {{ "/assets/Solutions/dm545_sheet4.pdf" | absolute_url }}
-[65]: {{ "/assets/Solutions/dm545_sheet5.pdf" | absolute_url }}
-[66]: {{ "/assets/Solutions/dm545_sheet6.pdf" | absolute_url }}
-[67]: {{ "/assets/Solutions/dm545_sheet7.pdf" | absolute_url }}
-[68]: {{ "/assets/Solutions/dm545_sheet8.pdf" | absolute_url }}
+[63]: {{ "/assets/Solutions/dm545_sheet3_sol.pdf" | absolute_url }}
+[64]: {{ "/assets/Solutions/dm545_sheet4_sol.pdf" | absolute_url }}
+[65]: {{ "/assets/Solutions/dm545_sheet5_sol.pdf" | absolute_url }}
+[66]: {{ "/assets/Solutions/dm545_sheet6_sol.pdf" | absolute_url }}
+[67]: {{ "/assets/Solutions/dm545_sheet7_sol.pdf" | absolute_url }}
+[68]: {{ "/assets/Solutions/dm545_sheet8_sol.pdf" | absolute_url }}
 [69]: {{ "https://www.gurobi.com/resource/electrical-power-generation-jupyter-notebook-i-and-ii/" | absolute_url }}
 [699]: {{ "https://www.gurobi.com/resource/factory-planning-i-and-ii/" | absolute_url }}
 
