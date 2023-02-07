@@ -78,15 +78,15 @@ w3.includeHTML();
 | L           | Diet problem                                                           | [Slides][2]; [LN pp 7-21][22]         |       |
 |             | Fourier & Moutzkin elimination                                         | [Da]; [FM]                            |       |
 |             | Notation: polyhedral analysis                                          | [F ch 1, 2]; [MG ch 4]; [HL sc 5.1]   |       |
-| E           | Exercises: LP Modeling                                                 | [Sheet 1][51]                         |       |
+| E           | Exercises: LP Modeling                                                 | [Sheet 1][51];  [Solutions][61]                         |       |
 |-------------+------------------------------------------------------------------------+---------------------------------------+-------|
-| 6        L  | Simplex Method                                                         |                                       |       |
-|             | Geometry and Algebra of Linear programming theory, Fundamental theorem |                                       |       |
-|             | Gaussian Elimination                                                   |                                       |       |
-|             | Simplex method, tableaux and dictionaries                              |                                       |       |
+| 6        L  | Simplex Method                                                         | [Slides][3]; [LN][23]                                      |       |
+|             | Geometry and Algebra of Linear programming theory, Fundamental theorem | [wiki](http://en.wikipedia.org/wiki/Fundamental_theorem_of_linear_programming)                                        |       |
+|             | Gaussian Elimination                                                   |  [F pp 33-48]; [MG ch 5]; [HL sc 4.1-4.4]                                     |       |
+|             | Simplex method, tableaux and dictionaries                              |   [Python T2]                                         |       |
 | L           | Exception Handling, degeneracies, pivot rules,                         |                                       |       |
 |             | Initialization                                                         |                                       |       |
-| E           | Exercises: Simplex Method                                              |                                       |       |
+| E           | Exercises: Simplex Method                                              |  [Sheet 2][52]                                    |       |
 |-------------+------------------------------------------------------------------------+---------------------------------------+-------|
 | 7    L      | Duality Derivation:                                                    |                                       |       |
 |             | Bounding and multipliers approach                                      |                                       |       |
