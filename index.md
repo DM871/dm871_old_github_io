@@ -86,7 +86,7 @@ w3.includeHTML();
 |             | Simplex method, tableaux and dictionaries                              |   [Python T2]                                         |       |
 | L           | Exception Handling, degeneracies, pivot rules,                         |                                       |       |
 |             | Initialization                                                         |                                       |       |
-| E           | Exercises: Simplex Method                                              |                                    |       |
+| E           | Exercises: Simplex Method                                              |  [Sheet 2][52]                                    |       |
 |-------------+------------------------------------------------------------------------+---------------------------------------+-------|
 | 7    L      | Duality Derivation:                                                    |                                       |       |
 |             | Bounding and multipliers approach                                      |                                       |       |
