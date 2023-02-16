@@ -14,12 +14,12 @@ permalink: /
 ### General information
 
 
-- Official course description: [DM545](https://odin.sdu.dk/sitecore/index.php?a=searchfagbesk&internkode=dm545&lang=en) and [DM871](https://odin.sdu.dk/sitecore/index.php?a=searchfagbesk&internkode=dm871&lang=en)
+- Official course description: [DM545](https://odin.sdu.dk/sitecore/index.php?a=searchfagbesk&internkode=dm545&lang=en){:target="_blank"} and [DM871](https://odin.sdu.dk/sitecore/index.php?a=searchfagbesk&internkode=dm871&lang=en){:target="_blank"}
 
-- [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=25691)
+- [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=25691){:target="_blank"}
 
 
-- Teacher: [Marco Chiarandini](https://imada.sdu.dk/~marco)
+- Teacher: [Marco Chiarandini](https://imada.sdu.dk/~marco){:target="_blank"}
 
 - Instructor: [Frederik Lund Andersen](mailto:freda20@student.sdu.dk), [Juraj Marcibál](mailto:jmarc22@student.sdu.dk)
 
@@ -29,12 +29,12 @@ permalink: /
 
 <p>
 MitSDU
-<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f23">DM545</a>
-<a href="https://mitsdu.sdu.dk/skema/activity/N340030101/f23">DM871</a>
+<a href="https://mitsdu.sdu.dk/skema/activity/N330047101/f23" target="_blank">DM545</a>
+<a href="https://mitsdu.sdu.dk/skema/activity/N340030101/f23" target="_blank">DM871</a>
 </p>
 
 
-- <a href="https://skemaplan.sdu.dk/">Alternative view</a>
+- <a href="https://skemaplan.sdu.dk/" target="_blank">Alternative view</a>
 
 <!-- https://vis.aida.imada.sdu.dk/public/e22udgave3/DM561 -->
 
