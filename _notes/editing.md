@@ -11,27 +11,29 @@ categories: notes
 
 ### Instructions on the front page of the test
 
-This is one of a series of three tests that constitute the exam of
-the course. The test consists of a number of tasks divided into
+This is one of a series of tests that constitute the exam of the
+course. The test consists of a number of tasks subdivided into
 subtasks. The answers must be collected in a unique PDF document and are
 to be handed in electronically in ItsLearning.
 
 -   **The test is individual. You are not allowed to collaborate by any
     means with other persons**.
 
-- Your answers will be assessed by the teacher, the instructor and an
-    external censor. Moreover, the answers will be grouped by subtasks
+-   Keep your answers anonymous but make sure that you specify your
+    **SDU username** (the part in your SDU email address before the
+    @ symbol). Use the Latex or Word templates provided in the external
+    web page to see where to specify the SDU username (Assessment
+    $\rightarrow$ Preparation for the take-home assignments).
+
+- Your answers will be assessed by the teacher and an
+    internal censor. Moreover, the answers will be grouped by subtasks
     by an automated parser tool.  Therefore, it is very important that
     you follow the instructions below.
 
--   Keep your answers anonymous but make sure that you specify your
-    exam number (Not CPRN!). Use the Latex and Word templates provided in the
-    external web page to see where to specify the exam number.
-
--   In the PDF document make sure that you start a new page for every
+- **In the PDF document make sure that you start a new page for every
     SUBTASK and you write a section title that includes the word
     “Subtask”, specifying which SUBTASK you are addressing. See the
-    examples in the Latex and Word templates provided in the external web page.
+    examples in the Latex and Word templates provided in the external web page.**
 
 -   You can write your answers in Danish or in English.
 
@@ -55,10 +57,10 @@ to be handed in electronically in ItsLearning.
     from the Public Web Page:\ Assessment $\rightarrow$ Preparation
     for the take-home assignments. (This page below.)
 
--   The contribution to the final evaluation of each task, if carried
-    out correctly, is given at the beginning of each task as a list of
-    points for each subtask. The maximum total score is 100.
-
+-  The contribution of each subtask to the final evaluation is not
+  given but tasks are sorted by non-increasing impact on the final
+  grade.
+  
 
 ### Templates
  
