@@ -100,11 +100,11 @@ w3.includeHTML();
 |             | Revised Simplex Method                                                 | [Slides][7]; [LN][26]; [F, sec 4.3]; [[Ch ch 7](./assets/Ch-Revised.pdf)]; [HL ch 5]; [Va 6.1-6.5] |        |
 | L           | Integer Programming - Overview                                         | [Slides][8]; [LN][27]; [F, ch 2, sc 6.1]                                                           |        |
 |             | Modeling examples                                                      |                                                                                                    |        |
-| E           | Sensitivity Analysis, Revised Simplex Method                           | [Sheet 4][54]; [Solutions][64]                                                                                      |        |
+| E           | Sensitivity Analysis, Revised Simplex Method                           | [Sheet 4][54]; [Solutions][64]                                                                     |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
-| 9        L  | More Modeling Examples                                                 |                                                                                                    | Test 1 |
-| L           | Formulations, Relaxations                                              |                                                                                                    |        |
-| E           | IP Modeling                                                            |                                                                                                    |        |
+| 9        L  | More Modeling Examples                                                 | [LN sc 5.2, 5.3]; [MG sc 6.4, 6.6, ch 3]; [Wo ch 1]; [Wi ch 9.1-9.5]                               | Test 1 |
+| L           | Formulations, Relaxations                                              | [Slides][9]; [LN sc 5.4, 6]; [Wo ch 2]                                                             |        |
+| E           | IP Modeling                                                            | [Sheet 5][55]                                                                                      |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          |                                                                                                    |        |
 | L           | Branch and Bound                                                       |                                                                                                    |        |
