@@ -104,11 +104,11 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 9        L  | More Modeling Examples                                                 | [LN sc 5.2, 5.3]; [MG sc 6.4, 6.6, ch 3]; [Wo ch 1]; [Wi ch 9.1-9.5]                               | Test 1 |
 | L           | Formulations, Relaxations                                              | [Slides][9]; [LN sc 5.4, 6]; [Wo ch 2]                                                             |        |
-| E           | IP Modeling                                                            | [Sheet 5][55]                                                                                      |        |
+| E           | IP Modeling                                                            | [Sheet 5][55]; [Solutions][65]                                                                     |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
-| 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          |                                                                                                    |        |
-| L           | Branch and Bound                                                       |                                                                                                    |        |
-| E           | Cutting Planes and Branch & Bound                                      |                                                                                                    |        |
+| 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10];  [LN ch 6]; [Wo ch 8.1-8.6]; [F sc 6.3]                                              |        |
+| L           | Branch and Bound                                                       | [Slides][11]; [LN ch 7]; [Wo ch 7]; [F sc 6.4]; [GRB]                                              |        |
+| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];                                                                                     |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         |                                                                                                    |        |
 | L           | Network Flows: Applications; Duality in Network Flows                  |                                                                                                    |        |
