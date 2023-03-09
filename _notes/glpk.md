@@ -1,3 +1,12 @@
+---
+layout: default #Do not change.
+title: "GLPK" #Article title.
+date:   2022-12-14 14:02:54 +0200
+author: marco #Author's nick.
+---
+
+
+
 GLPK
 ====
 
@@ -6,40 +15,46 @@ Installation
 
 -   Windows: [GUSEK](http://gusek.sourceforge.net/gusek.html)
 
--   Linux and Mac: download [GLPK](http://www.gnu.org/software/glpk/),
+-   Ubuntu and WSL:
+	```
+	sudo apt-get install glpk-utils libglpk40 libglpk-dev glpk-doc python3-pulp
+	```
+
+-   Manual installation on Linux and Mac: download [GLPK](http://www.gnu.org/software/glpk/),
     untar and execute:
 
-    @\<code\> mkdir \~/usr
-
+    ```
+	mkdir ~/usr
     ./configure --prefix=/home/yourid/usr
-
     make
-
-    make install @\</code\>
-
-    The exectuable is then @\<code\>\~/usr/bin/glpsol@\</code\>, or you
+    make install
+	```
+    
+	The exectuable is then `~/usr/bin/glpsol`, or you
     can add the path in your bash config file:
 
-    @\<code\> echo \"export PATH=PATH:\~/usr/bin\" \>\> \~/.bashrc
-    @\</code\>
+    ```
+	echo "export PATH=PATH:~/usr/bin" >> ~/.bashrc
+    ```
 
-    or tcsh config file (check @\<code\>echo \$SHELL@\</code\> to know
+    or `.bash` config file (check `echo $SHELL@` to know
     which shell you are using)
 
-    @\<code\> echo \"setenv PATH PATH:\~/usr/bin\" \>\> \~/.tcshrc
-    @\</code\>
+    ```
+	echo "export PATH=${PATH}:~/usr/bin" >> ~/.bashrc
+    ```
 
-    As text editor you can use @\<code\>emacs@\</code\> that offers
+    As text editor you can use `emacs` that offers
     syntax highlighting, provided the extension of the model file is
-    @\<code\>.mod.@\</code\>
+    `.mod`.
 
 Documentation
 -------------
 
-The main reference is the documentation file @\<code\>gmpl.pdf@\</code\>
-(70 pages) from @\<code\>doc/@\</code\> directory in the installation
-directory. Moreover check the files @\<code\>.mod@\</code\> in the
-directory @\<code\>examples/@\</code\>.
+The main reference is the documentation file `gmpl.pdf`
+(70 pages) from `doc` directory in the installation
+directory. Moreover check the files `.mod` in the
+directory `examples/`.
 
 These might also be worth skimming through:
 
@@ -56,30 +71,31 @@ Usage
 -----
 
 -   To solve with GLPK solver:
-
-    @\<code\> glpsol -m plan.mod -o plan.sol @\</code\>
+	```
+	glpsol -m plan.mod -o plan.sol
+	```
 
 -   To solve with Gurobi:
 
-    @\<code\> glpsol --check --model plan.mod --wlp plan.lp
-
+    ```
+	glpsol --check --model plan.mod --wlp plan.lp
     gurobi.sh
-
-    gurobi\> m=read(\"plan.lp\")
-
-    gurobi\> m.optimize() @\</code\>
+    gurobi> m=read("plan.lp")
+    gurobi> m.optimize()
+	```
 
 -   To solve with SCIP from ZIBOPT
 
-    @\<code\> glpsol --check --model plan.mod --wlp plan.lp
-
-    scip -f plan.lp @\</code\>
+    ```
+	glpsol --check --model plan.mod --wlp plan.lp
+    scip -f plan.lp 
+	```
 
 -   To solve with CPLEX
 
-    @\<code\> glpsol --check --model plan.mod --wlp plan.lp
+    ```
+	glpsol --check --model plan.mod --wlp plan.lp
+    cplex plan.lp > read plan.lp > optimize > help
+	```
 
-    cplex plan.lp \> read plan.lp \> optimize \> help @\</code\>
-
-[Why
-GLPK](http://spokutta.wordpress.com/the-gnu-linear-programming-kit-glpk/)?
+[Why GLPK](http://spokutta.wordpress.com/the-gnu-linear-programming-kit-glpk/)?

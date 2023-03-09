@@ -14,7 +14,7 @@ dockserve:
 
 install:
 	gem update --system # upgrade RubyGems
-	gem install jekyll bundler
+	gem install jekyll bundler # needed only once at system level
 	bundle install # all gems in Gemfile
 
 
@@ -23,9 +23,15 @@ update:
 	bundle update
 	#sudo certified-update
 
+serve2:
+	bundler exec jekyll build && bash -c 'cd _site && python -m http.server 3000'
 
+
+serve:
+	bundle exec jekyll serve
 
 build:
+	bundle install
 	bundle exec jekyll build
 
 publish:
