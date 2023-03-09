@@ -210,8 +210,11 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [T3] [Python for matrix operations](https://github.com/DM871/dm871.github.io/blob/main/notebooks/Tutorial4Exam.ipynb)
 
-- [GRB] Solving MILP Problems in Python with Gurobi: [Part 1][101]; [Part 2][102]
-
+- [GRB] A tutorial for solving MILP Problems in Python: 
+  - [Preparation][101]; 
+  - gurobipy: [Part 1][102], [Part 2][103]
+  - python-mip: [Part 1][104], [Part 2][105]
+  - pyscipopt: [Part 1][106], [Part 2][107]
 
 #### Other Tools
 
@@ -319,6 +322,11 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 
 
-[101]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb" }}
-[102]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb" }}
+[101]: {{ "/notes/software.html" }}
+[102]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb" }}
+[103]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb" }}
+[104]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_mip_1.ipynb" }}
+[105]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_mip_2.ipynb" }}
+[106]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_scip_1.ipynb" }}
+[107]: {{ "https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_scip_2.ipynb" }}
 
