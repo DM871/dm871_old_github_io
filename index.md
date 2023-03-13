@@ -108,11 +108,11 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 10        L | Chvatal Gomory cuts. Cutting Plane Algorithms                          | [Slides][10];  [LN ch 6]; [Wo ch 8.1-8.6]; [F sc 6.3]                                              |        |
 | L           | Branch and Bound                                                       | [Slides][11]; [LN ch 7]; [Wo ch 7]; [F sc 6.4]; [GRB]                                              |        |
-| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];                                                                                     |        |
+| E           | Cutting Planes and Branch & Bound                                      | [Sheet 6][56];    [Solutions][66]                                                                  |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
-| 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         |                                                                                                    |        |
+| 11        L | Well Solved Problems: Total unimodular matrices; Network Flows         | [Slides][12] [F sc 6.2]; [Wo sec. 3.2-3.5]                                                         |        |
 | L           | Network Flows: Applications; Duality in Network Flows                  |                                                                                                    |        |
-| E           | Total Unimodular Matrices and Network Flows                            |                                                                                                    |        |
+| E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57]                                                                                      |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 12        L | Practice Workshop with ILP Software: Application Case                  |                                                                                                    |        |
 | L           | Farkas Lemma                                                           |                                                                                                    |        |
