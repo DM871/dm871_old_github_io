@@ -81,16 +81,6 @@ with the following steps:
 
 - Choose one of the following:
 
-  - Install `gurobipy` (easiest alternative). Follow these
-    [guidelines](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python-). The
-    recommended installation is via `pip`.  This should install also
-    gurobi. To make it work you need also a license from the gurobi web
-    page. You could use the tools from
-    [here](https://support.gurobi.com/hc/en-us/articles/360059842732)
-    and registered at the [gurobi page](https://www.gurobi.com) to get
-    the license. See also this local page of [guidelines](gurobi.html)
-    for a full installation and documentation of gurobi.
-
   - Install Python-MIP with `pip install mip` this should install also
     the solver CBC. If you want to work with gurobi follow these local
     [guidelines](gurobi.html) for the installation.
@@ -103,6 +93,17 @@ with the following steps:
   [instructions](https://www.scipopt.org/index.php#download) under the
   section Requirements. Consult the
   [documentation](https://scipopt.github.io/PySCIPOpt/docs/html/).
+
+  - Alternatively, install `gurobipy` (easiest alternative). Follow these
+    [guidelines](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python-). The
+    recommended installation is via `pip`.  This should install also
+    gurobi. To make it work you need also a license from the gurobi web
+    page. You could use the tools from
+    [here](https://support.gurobi.com/hc/en-us/articles/360059842732)
+    and registered at the [gurobi page](https://www.gurobi.com) to get
+    the license. See also this local page of [guidelines](gurobi.html)
+    for a full installation and documentation of gurobi.
+
 
 
 We assume that you have previous knowledge of Python programming (a
