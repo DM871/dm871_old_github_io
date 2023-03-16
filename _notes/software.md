@@ -96,7 +96,7 @@ with the following steps:
     [guidelines](gurobi.html) for the installation.
 
   - Alternatively, install SCIP following these
-  [instructions](https://www.scipopt.org/index.php#download) (you need
+  [instructions](https://github.com/scipopt/PySCIPOpt/blob/master/INSTALL.md) (you need
   to be on Linux, MacOs or WSL). Choose the installation via Precompiled
   Packages.  Then, install `PySCIPOpt` with `pip install pyscipopt`
   preceeded by these
