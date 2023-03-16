@@ -212,10 +212,10 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 
 - [GRB] A tutorial for solving MILP Problems in Python: 
   - [Preparation][101]; 
-  - gurobipy: [Part 1][102], [Part 2][103]
   - python-mip: [Part 1][104], [Part 2][105]
   - pyscipopt: [Part 1][106], [Part 2][107]
-
+  - gurobipy: [Part 1][102], [Part 2][103]
+  
 #### Other Tools
 
 
