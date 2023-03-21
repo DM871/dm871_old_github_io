@@ -114,8 +114,8 @@ w3.includeHTML();
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |        |
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57];   [Solutions][67]                                                                   |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
-| 12        L | Practice Workshop with ILP Software: Application Case                  | [GRB: Part 1, Part 2]; [ILP in e-sheets][99]                                                       |        |
-| L           | Farkas Lemma                                                           |                                                                                                    |        |
+| 12        L | Practice Workshop with ILP Software: Application Case                  | [GRB: Part 1, Part 2]; [ILP in e-sheets][99] and [Guides][999]                                     |        |
+| L           | Finishing duality in Network flows                                     | slides from previous week                                                                          |        |
 | E           | Modeling with Network Flows                                            | [Sheet 8][58];       [Factory Planning and Maintenance (ex10)][81];    [Unit Commitment][80]       |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 14          |                                                                        |                                                                                                    | Test 2 |
@@ -319,7 +319,8 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
     
 
 [99]: {{ "https://docs.google.com/spreadsheets/d/1yWCM0e-qjshjL0IHv8KbbM2csX-Lvi-Wl3nM707f6ac/edit?usp=sharing" }}
-
+[999]: {{
+"https://imada.sdu.dk/u/march/Blog/optimization/spreadsheets/2017/10/25/spreadsheets.html" }}
 
 
 [101]: {{ "/notes/software.html" }}
