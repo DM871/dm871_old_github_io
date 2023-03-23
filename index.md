@@ -92,7 +92,7 @@ w3.includeHTML();
 | 7    L      | Duality Derivation:                                                    | [Slides][5]; [LN][25]; [F sec 5.1-5.5]                                                             |        |
 |             | Bounding and multipliers approach                                      | [MG sc 6.1-6.3]; [HL sc 6.1-6.4]                                                                   |        |
 |             | Duality Theory:                                                        |                                                                                                    |        |
-|             | Weak/strong duality theorems and complementary slackness theorem       |                                                                                                    |        |
+|             | Weak/strong duality and complementary slackness theorems               |                                                                                                    |        |
 | L           | Duality Applications: Dual Simplex, Sensitivity Analysis               | [Slides][6]; [LN][25]; [F sec 5.6-5.8]; [Va sc 7.1]; [CL ch 2]                                     |        |
 | E           | Exercises: Duality                                                     | [Sheet 3][53]; [Solutions][63]                                                                     |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
