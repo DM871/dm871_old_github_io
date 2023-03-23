@@ -114,9 +114,9 @@ w3.includeHTML();
 | L           | Network Flows: Applications; Duality in Network Flows                  | [Slides][13]; [AMO-ch1]; [Wi-ch9]                                                                  |        |
 | E           | Total Unimodular Matrices and Network Flows                            | [Sheet 7][57];   [Solutions][67]                                                                   |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
-| 12        L | Practice Workshop with ILP Software: Application Case                  | [GRB: Part 1, Part 2]; [ILP in e-sheets][99] and [Guides][999]                                     |        |
+| 12        L | Practice Workshop with ILP Software: Application Case                  | [SS]; [GRB: Part 1, Part 2]                                                                        |        |
 | L           | Finishing duality in Network flows                                     | slides from previous week                                                                          |        |
-| E           | Modeling with Network Flows                                            | [Sheet 8][58];       [Factory Planning and Maintenance (ex10)][81];    [Unit Commitment][80]       |        |
+| E           | Modeling with Network Flows                                            | [Sheet 8][58];       [Factory Planning and Maintenance][81];    [Unit Commitment][80]              |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 14          |                                                                        |                                                                                                    | Test 2 |
 |             |                                                                        |                                                                                                    |        |
@@ -271,6 +271,7 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
 [12]: {{ "/assets/dm545_handout_lec12_netflow.pdf" | absolute_url }}
 [13]: {{ "/assets/dm545_handout_lec13_net_simplex.pdf" | absolute_url }}
 [14]: {{ "/assets/dm545_handout_farkas.pdf" | absolute_url }}
+[15]: {{ "/assets/dm545_handout_spreadsheet.pdf" | absolute_url }}
 
 
 <!--- Lecture Notes -->
