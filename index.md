@@ -116,7 +116,7 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 12        L | Practice Workshop with ILP Software: Application Case                  | [SS]; [GRB: Part 1, Part 2]                                                                        |        |
 | L           | Finishing duality in Network flows                                     | slides from previous week                                                                          |        |
-| E           | Modeling with Network Flows                                            | [Sheet 8][58];       [Factory Planning and Maintenance][81];    [Unit Commitment][80]              |        |
+| E           | Modeling with Network Flows                                            | [Sheet 8][58];       [Factory Planning and Maintenance][82];    [Unit Commitment][83]; [GRB2]      |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 14          |                                                                        |                                                                                                    | Test 2 |
 |             |                                                                        |                                                                                                    |        |
@@ -216,6 +216,8 @@ FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guideli
   - pyscipopt: [Part 1][106], [Part 2][107]
   - gurobipy: [Part 1][102], [Part 2][103]
   
+- [GRB2] [Applications in Gurobi](https://www.gurobi.com/jupyter_models/)
+
 #### Other Tools
 
 
