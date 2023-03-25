@@ -116,7 +116,7 @@ w3.includeHTML();
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 12        L | Practice Workshop with ILP Software: Application Case                  | [SS]; [GRB: Part 1, Part 2]                                                                        |        |
 | L           | Finishing duality in Network flows                                     | slides from previous week                                                                          |        |
-| E           | Modeling with Network Flows                                            | [Sheet 8][58];       [Factory Planning and Maintenance][82];    [Unit Commitment][83]; [GRB2]      |        |
+| E           | Modeling with Network Flows                                            | [Sheet 8][58];  [Solutions][68];      [Factory Planning and Maintenance][82];  ([Sol][699]);    [Unit Commitment][83];  ([Sol][69]); [GRB2]      |        |
 |-------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------|
 | 14          |                                                                        |                                                                                                    | Test 2 |
 |             |                                                                        |                                                                                                    |        |
