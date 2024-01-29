@@ -36,7 +36,7 @@ build:
 
 publish:
 	#bundle exec jekyll build --trace -d /home/marco/public_html/Teaching/AY2020-2021/DM871
-	cp -fr _site/* /home/marco/public_html/Teaching/AY2021-2022/DM871/
+	cp -fr _site/* /home/marco/public_html/Teaching/AY2022-2023/DM871/
 
 clean:
 	rm -fr /home/marco/public_html/DM871/*
